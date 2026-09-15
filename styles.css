@@ -156,7 +156,7 @@ button{font-family:inherit}
 .pkg-card ul li::before{content:'';position:absolute;left:0;top:7px;width:7px;height:7px;border-radius:50%;background:var(--green)}
 .pkg-card__prices{margin-top:auto;border-top:1px dashed #C6B7E8;padding-top:16px;display:flex;flex-direction:column;gap:8px}
 .pkg-card .pkg-card__options{list-style:none;display:flex;flex-direction:column;gap:6px;margin:8px 0 0}
-.pkg-card .pkg-card__options li{padding-left:16px;position:relative;font-weight:600;opacity:.85}
+.pkg-card .pkg-card__options li{padding-left:16px;position:relative;font-weight:700}
 .pkg-card .pkg-card__options li::before{content:'–' !important;background:none !important;border-radius:0 !important;width:auto !important;height:auto !important;position:absolute;left:0;top:0;color:var(--purple-1);font-weight:800}
 .pkg-card__price-row{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
 .pkg-card__price-row span{font-size:13px;font-weight:700;opacity:.7}
