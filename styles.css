@@ -164,7 +164,7 @@ button{font-family:inherit}
 .pkg-card__price-old{font-size:13px;text-decoration:line-through;opacity:.45;font-weight:700;margin-left:8px}
 .pkg-card__perk{font-size:12.5px;font-weight:800;color:var(--green-dark);text-transform:uppercase;letter-spacing:.02em}
 
-.program-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;align-items:start}
+.program-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;align-items:stretch}
 .program-grid--4col{grid-template-columns:repeat(4,1fr);gap:18px}
 .program-grid--4col .program-card__title{font-size:16px}
 .program-grid--4col .program-card__desc{font-size:12.5px}
