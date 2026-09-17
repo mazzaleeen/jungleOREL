@@ -210,6 +210,9 @@ button{font-family:inherit}
 .meta-chip--price{background:var(--green);color:#fff}
 
 .program-card__teaser{font-size:14px;opacity:.85;font-weight:700;line-height:1.55}
+.program-card__list{list-style:none;display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:700;opacity:.85;line-height:1.55}
+.program-card__list li{padding-left:16px;position:relative}
+.program-card__list li::before{content:'–';position:absolute;left:0;top:0;color:var(--purple-1);font-weight:800}
 .program-card__desc{font-size:14px;opacity:.85;font-weight:700;line-height:1.6}
 .program-card__note{font-size:12px;opacity:.7;font-weight:700;font-style:italic;margin-top:-6px}
 
