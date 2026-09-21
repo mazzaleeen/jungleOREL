@@ -129,6 +129,7 @@ button{font-family:inherit}
 .badge-pill--accent{background:var(--green)}
 
 .room-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px}
+.room-grid--compact{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
 .room-card{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 14px 34px rgba(74,17,133,.16);isolation:isolate}
 .room-card--clickable{cursor:pointer;transition:transform .25s,box-shadow .25s}
 .room-card--clickable:hover{transform:translateY(-4px);box-shadow:0 20px 44px rgba(74,17,133,.24)}
@@ -136,6 +137,7 @@ button{font-family:inherit}
 .room-card:hover img{transform:scale(1.07)}
 .room-card::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(46,11,94,0) 42%,rgba(46,11,94,.88) 100%);pointer-events:none}
 .room-card__label{position:absolute;left:20px;right:20px;bottom:18px;z-index:2;color:#fff;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:.01em}
+.room-card__label small{display:block;margin-top:5px;font-size:13px;font-weight:700;text-transform:none;letter-spacing:0;opacity:.88}
 
 .callout{background:var(--bg-lavender);border:1.5px dashed var(--purple-1);border-radius:20px;padding:22px 28px;text-align:center;font-size:15px;color:var(--purple-1);margin:44px 0;font-weight:700}
 .callout strong{color:var(--purple-2)}
