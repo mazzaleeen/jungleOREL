@@ -1106,3 +1106,18 @@ body{
     font-size:15px;
   }
 }
+
+/* Сделай праздник ярче — пакетные предложения */
+.extras-card{background:#fff;border:2px solid var(--line);border-radius:28px;padding:30px 36px 34px;box-shadow:0 12px 32px rgba(74,17,133,.08)}
+.extras-card__lead{text-align:center;font-size:15px;font-weight:800;color:var(--purple-1);text-transform:uppercase;letter-spacing:.03em;margin-bottom:24px;opacity:.8}
+.extras-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.extras-col{background:var(--bg-lavender);border-radius:22px;padding:22px 24px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.extras-col__icon{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff}
+.extras-col__icon svg{width:28px;height:28px}
+.extras-col__icon--yellow{background:#f5b82e}
+.extras-col__icon--pink{background:#e0316b}
+.extras-col__icon--green{background:var(--green)}
+.extras-col ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;width:100%}
+.extras-col li{background:#fff;border-radius:14px;padding:11px 14px 11px 40px;position:relative;font-size:15px;font-weight:800;color:var(--purple-1)}
+.extras-col li::before{content:'+';position:absolute;left:14px;top:50%;transform:translateY(-50%);width:18px;height:18px;border-radius:50%;background:var(--green);color:#fff;font-size:14px;line-height:18px;text-align:center;font-weight:900}
+@media (max-width:760px){.extras-grid{grid-template-columns:1fr}.extras-card{padding:22px 18px 24px}}
