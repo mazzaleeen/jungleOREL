@@ -1119,5 +1119,5 @@ body{
 .extras-col__icon--green{background:var(--green)}
 .extras-col ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;width:100%}
 .extras-col li{background:#fff;border-radius:14px;padding:11px 14px 11px 40px;position:relative;font-size:15px;font-weight:800;color:var(--purple-1)}
-.extras-col li::before{content:'+';position:absolute;left:14px;top:50%;transform:translateY(-50%);width:18px;height:18px;border-radius:50%;background:var(--green);color:#fff;font-size:14px;line-height:18px;text-align:center;font-weight:900}
+.extras-col li::before{content:'';position:absolute;left:14px;top:50%;margin-top:-10px;width:20px;height:20px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='10' fill='%2358CC3A'/%3E%3Cpath d='M10 5v10M5 10h10' stroke='%23fff' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat}
 @media (max-width:760px){.extras-grid{grid-template-columns:1fr}.extras-card{padding:22px 18px 24px}}
