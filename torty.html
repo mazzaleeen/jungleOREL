@@ -25,10 +25,10 @@
         </span>
       </div>
       <span class="top-divider"></span>
-      <a href="tel:+79625097493" class="top-item">
+      <a href="tel:84862220617" class="top-item">
         <span class="top-text top-text--right">
           <small>Позвонить</small>
-          <strong>+7 (962) 509-74-93</strong>
+          <strong>8 486 222-06-17</strong>
         </span>
         <span class="top-icon top-icon--white">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
@@ -46,7 +46,7 @@
     <div class="container main-bar__inner">
       <div class="header-brand">
       <a class="logo" href="index.html"><img src="images/image.png" alt="Джунгли Сити"></a>
-      <a class="news-badge" href="https://nn.jucity.ru/" target="_blank" rel="noopener"><span>Новости, афиша, акции</span></a>
+      <a class="news-badge" href="https://orel.jucity.ru/" target="_blank" rel="noopener"><span>Новости, афиша, акции</span></a>
       </div>
       <nav class="nav" id="nav">
         <div class="nav-item"><a class="nav-btn" href="komnaty.html">Комнаты</a></div>
@@ -58,24 +58,20 @@
           </button>
           <div class="flyout" data-flyout="anim-nav">
             <a href="animations.html#new">Новинки</a>
-            <a href="animations.html#quests">Активити и квесты</a>
+            <a href="animations.html#themed">Тематические анимации</a>
+            <a href="animations.html#heroes">Любимые герои</a>
+            <a href="animations.html#activities">Активити программы</a>
+            <a href="animations.html#quests">Квесты</a>
+            <a href="animations.html#kids">Малышник</a>
             <a href="animations.html#masterclass">Мастер-классы</a>
             <a href="animations.html#shows">Шоу-программы</a>
-            <a href="animations.html#kids">Малышник</a>
-            <a href="animations.html#parties">Вечеринки</a>
-            <a href="animations.html#heroes">Любимые герои</a>
-            <a href="animations.html#premium">Premium герои</a>
           </div>
         </div>
 
         <div class="nav-item"><a class="nav-btn" href="paketnye-predlozheniya.html">Пакетные предложения</a></div>
         <div class="nav-item"><a class="nav-btn" href="vpechatleniya.html">Впечатления</a></div>
-        <div class="nav-item"><a class="nav-btn" href="menu.html">Ресторан</a></div>
         <div class="nav-item"><a class="nav-btn active" href="torty.html">Торты</a></div>
         <div class="nav-item"><a class="nav-btn" href="vypusknoy.html">Выпускные</a></div>
-
-        <div class="nav-item is-hidden"><a class="nav-btn" href="index.html#">Не анимация</a></div>
-        <div class="nav-item is-hidden"><a class="nav-btn" href="index.html#">Новогоднее веселье</a></div>
       </nav>
       <button class="burger" id="burger" aria-label="Разделы"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Разделы</button>
     </div>
@@ -83,342 +79,538 @@
 
 <section class="page-hero">
   <div class="container">
-    <div class="cake-hero__eyebrow">Каталог</div>
+    <div class="cake-hero__eyebrow">Каталог тортов</div>
     <h1>Торты</h1>
-    <p>Выберите оформление по фото или номеру</p>
+    <p>Только натуральные ингредиенты — без растительных жиров</p>
   </div>
   <svg class="page-hero-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
     <path fill="#FFFDF9" d="M0,40 C240,60 480,10 720,26 C960,42 1200,14 1440,34 L1440,60 L0,60 Z"/>
   </svg>
 </section>
 
-<section class="category pattern-dots" style="background:var(--bg)">
+<nav class="subnav" id="subnav" aria-label="Разделы страницы тортов">
+  <div class="subnav__inner" id="subnavInner">
+    <a href="#how">Как заказать</a>
+    <a href="#fillings">Начинки</a>
+    <a href="#ready">Готовые решения</a>
+    <a href="#decor">Декор</a>
+    <a href="#calc">Калькулятор</a>
+    <a href="#candy">Кэнди-бар</a>
+    <a href="#sweet-mk">Сладкий мастер-класс</a>
+  </div>
+</nav>
+
+<section class="category pattern-dots" id="how" style="background:var(--bg)">
   <div class="container">
-
-    <div class="cake-search">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-      <input type="text" id="cakeSearch" placeholder="Поиск по названию или номеру — например, «единорог» или 565">
-    </div>
-
-    <div class="cake-fillings-banner">
-      <div class="cake-fillings-banner__text">Начинки и стоимость
-        <span>Все варианты начинок и цена за 1 кг</span>
+    <h2>Заказать торт — легко!</h2>
+    <div class="tk-steps">
+      <div class="tk-step">
+        <span class="tk-step__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><path d="M5 20v-7h14v7"/><path d="M5 16.5c2 1 3.5-1 5 0s3 1 4.5 0 3-1 4.5 0"/><path d="M12 13V9"/><path d="M12 6.5c-.7-.9-2-.5-2 .5 0 1 2 2 2 2s2-1 2-2c0-1-1.3-1.4-2-.5Z"/></svg></span>
+        <span class="tk-step__label">Шаг 1</span>
+        <p class="tk-step__title">Выбери категорию начинки</p>
+        <p class="tk-step__sub">«Классика», «Изысканность» или «Экзотика»</p>
       </div>
-      <a href="#fillings" class="cake-fillings-banner__btn">Посмотреть</a>
-    </div>
-
-    <div class="cake-tile-grid" id="cakeTileGrid">
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="щенячий патруль" data-slug="schenyachiy-patrul" data-price="от 600 ₽/кг" data-vk="https://vk.com/album-184632420_279101059">
-        <span class="cake-tile__num">№ 556</span>
-        <div class="cake-tile__photo"><img src="assets/torty/schenyachiy-patrul.webp" alt="Щенячий патруль" loading="lazy"></div>
-        <span class="cake-tile__label">Щенячий патруль</span>
+      <div class="tk-step">
+        <span class="tk-step__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 1.6-.8 1.3-1.7-.4-1.2.4-2.3 1.7-2.3H17a4 4 0 0 0 4-4c0-5.5-4-10-9-10Z"/><circle cx="7.5" cy="11" r="1.2"/><circle cx="10" cy="7" r="1.2"/><circle cx="15" cy="7.5" r="1.2"/></svg></span>
+        <span class="tk-step__label">Шаг 2</span>
+        <p class="tk-step__title">Выбери декор</p>
+        <p class="tk-step__sub">и определись с количеством</p>
       </div>
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="динозавры" data-slug="dinozavry" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279101077">
-        <span class="cake-tile__num">№ 9</span>
-        <div class="cake-tile__photo"><img src="assets/torty/dinozavry.webp" alt="Динозавры" loading="lazy"></div>
-        <span class="cake-tile__label">Динозавры</span>
+      <div class="tk-step">
+        <span class="tk-step__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="9" r="5.5"/><circle cx="15" cy="9" r="5.5"/><circle cx="12" cy="14.5" r="5.5"/></svg></span>
+        <span class="tk-step__label">Шаг 3</span>
+        <p class="tk-step__title">Выбери цвет покрытия</p>
+        <p class="tk-step__sub">ряд начинок не покрывается цветом</p>
       </div>
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="черепашки ниндзя" data-slug="cherepashki-nindzya" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279101082">
-        <span class="cake-tile__num">№ 562</span>
-        <div class="cake-tile__photo"><img src="assets/torty/cherepashki-nindzya.webp" alt="Черепашки ниндзя" loading="lazy"></div>
-        <span class="cake-tile__label">Черепашки ниндзя</span>
-      </div>
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="единорог" data-slug="edinorog" data-price="от 500 ₽/кг" data-vk="https://vk.com/album-184632420_279101091">
-        <span class="cake-tile__num">№ 565</span>
-        <div class="cake-tile__photo"><img src="assets/torty/edinorog.webp" alt="Единорог" loading="lazy"></div>
-        <span class="cake-tile__label">Единорог</span>
-      </div>
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="литл пони" data-slug="litl-poni" data-price="от 800 ₽/кг" data-vk="https://vk.com/album-184632420_279101095">
-        <span class="cake-tile__num">№ 21</span>
-        <div class="cake-tile__photo"><img src="assets/torty/litl-poni.webp" alt="Литл пони" loading="lazy"></div>
-        <span class="cake-tile__label">Литл пони</span>
-      </div>
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="лего" data-slug="lego" data-price="от 600 ₽/кг" data-vk="https://vk.com/album-184632420_279101103">
-        <span class="cake-tile__num">№ 570</span>
-        <div class="cake-tile__photo"><img src="assets/torty/lego.webp" alt="Лего" loading="lazy"></div>
-        <span class="cake-tile__label">Лего</span>
-      </div>
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="гарри поттер" data-slug="garri-potter" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279174068">
-        <span class="cake-tile__num">№ 572</span>
-        <div class="cake-tile__photo"><img src="assets/torty/garri-potter.webp" alt="Гарри Поттер" loading="lazy"></div>
-        <span class="cake-tile__label">Гарри Поттер</span>
-      </div>
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="куклы лол" data-slug="kukly-lol" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279101119">
-        <span class="cake-tile__num">№ 574</span>
-        <div class="cake-tile__photo"><img src="assets/torty/kukly-lol.webp" alt="Куклы ЛОЛ" loading="lazy"></div>
-        <span class="cake-tile__label">Куклы ЛОЛ</span>
-      </div>
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="космос" data-slug="kosmos" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279101126">
-        <span class="cake-tile__num">№ 581</span>
-        <div class="cake-tile__photo"><img src="assets/torty/kosmos.webp" alt="Космос" loading="lazy"></div>
-        <span class="cake-tile__label">Космос</span>
-      </div>
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="леди баг" data-slug="ledi-bag" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279101129">
-        <span class="cake-tile__num">№ 583</span>
-        <div class="cake-tile__photo"><img src="assets/torty/ledi-bag.webp" alt="Леди Баг" loading="lazy"></div>
-        <span class="cake-tile__label">Леди Баг</span>
-      </div>
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="спорт" data-slug="sport" data-price="от 600 ₽/кг" data-vk="https://vk.com/album-184632420_279102022">
-        <span class="cake-tile__num">№ 614</span>
-        <div class="cake-tile__photo"><img src="assets/torty/sport.webp" alt="Спорт" loading="lazy"></div>
-        <span class="cake-tile__label">Спорт</span>
-      </div>
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="зверята" data-slug="zveryata" data-price="от 800 ₽/кг" data-vk="https://vk.com/album-184632420_279102011">
-        <span class="cake-tile__num">№ 167</span>
-        <div class="cake-tile__photo"><img src="assets/torty/zveryata.webp" alt="Зверята" loading="lazy"></div>
-        <span class="cake-tile__label">Зверята</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="торт с ягодами" data-slug="tort-s-yagodami" data-price="от 600 ₽/кг" data-vk="https://vk.com/album-184632420_279102064">
-        <span class="cake-tile__num">№ 673</span>
-        <div class="cake-tile__photo"><img src="assets/torty/tort-s-yagodami.webp" alt="Торт с ягодами" loading="lazy"></div>
-        <span class="cake-tile__label">Торт с ягодами</span>
-      </div>
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="девочки-принцессы" data-slug="devochki-princessy" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279101148">
-        <span class="cake-tile__num">№ 576</span>
-        <div class="cake-tile__photo"><img src="assets/torty/devochki-princessy.webp" alt="Девочки-принцессы" loading="lazy"></div>
-        <span class="cake-tile__label">Девочки-принцессы</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="микки и минни маус" data-slug="mikki-i-minni-maus" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279101151">
-        <span class="cake-tile__num">№ 309</span>
-        <div class="cake-tile__photo"><img src="assets/torty/mikki-i-minni-maus.webp" alt="Микки и Минни Маус" loading="lazy"></div>
-        <span class="cake-tile__label">Микки и Минни Маус</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="амонг ас" data-slug="among-us" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279103955">
-        <span class="cake-tile__num">№ 681</span>
-        <div class="cake-tile__photo"><img src="assets/torty/among-us.webp" alt="Амонг Ас" loading="lazy"></div>
-        <span class="cake-tile__label">Амонг Ас</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="девочки леди" data-slug="devochki-ledi" data-price="от 600 ₽/кг" data-vk="https://vk.com/album-184632420_279101148">
-        <span class="cake-tile__num">№ 593</span>
-        <div class="cake-tile__photo"><img src="assets/torty/devochki-ledi.webp" alt="Девочки леди" loading="lazy"></div>
-        <span class="cake-tile__label">Девочки леди</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="без декора" data-slug="bez-dekora" data-price="от 300 ₽/кг" data-vk="https://vk.com/album-184632420_279102073">
-        <span class="cake-tile__num">№ 347</span>
-        <div class="cake-tile__photo"><img src="assets/torty/bez-dekora.webp" alt="Без декора" loading="lazy"></div>
-        <span class="cake-tile__label">Без декора</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="бравл старс" data-slug="bravl-stars" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279103963">
-        <span class="cake-tile__num">№ 276</span>
-        <div class="cake-tile__photo"><img src="assets/torty/bravl-stars.webp" alt="Бравл Старс" loading="lazy"></div>
-        <span class="cake-tile__label">Бравл Старс</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="транспорт" data-slug="transport" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279128942">
-        <span class="cake-tile__num">№ 238</span>
-        <div class="cake-tile__photo"><img src="assets/torty/transport.webp" alt="Транспорт" loading="lazy"></div>
-        <span class="cake-tile__label">Транспорт</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="спанч боб" data-slug="spanch-bob" data-price="от 600 ₽/кг" data-vk="https://vk.com/album-184632420_283983332">
-        <span class="cake-tile__num">№ 636</span>
-        <div class="cake-tile__photo"><img src="assets/torty/spanch-bob.webp" alt="Спанч Боб" loading="lazy"></div>
-        <span class="cake-tile__label">Спанч Боб</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="торты для девочек" data-slug="torty-dlya-devochek" data-price="от 600 ₽/кг" data-vk="https://vk.com/album-184632420_279101148">
-        <span class="cake-tile__num">№ 660</span>
-        <div class="cake-tile__photo"><img src="assets/torty/torty-dlya-devochek.webp" alt="Торты для девочек" loading="lazy"></div>
-        <span class="cake-tile__label">Торты для девочек</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="мальчики" data-slug="malchiki" data-price="от 500 ₽/кг" data-vk="https://vk.com/album-184632420_307188829">
-        <span class="cake-tile__num">№ 668</span>
-        <div class="cake-tile__photo"><img src="assets/torty/malchiki.webp" alt="Мальчики" loading="lazy"></div>
-        <span class="cake-tile__label">Мальчики</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="звёздные войны" data-slug="zvezdnye-voyny" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279101124">
-        <span class="cake-tile__num">№ 579</span>
-        <div class="cake-tile__photo"><img src="assets/torty/zvezdnye-voyny.webp" alt="Звёздные войны" loading="lazy"></div>
-        <span class="cake-tile__label">Звёздные войны</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="игра в кальмара" data-slug="igra-v-kalmara" data-price="от 700 ₽/кг">
-        <span class="cake-tile__num">№ 656</span>
-        <div class="cake-tile__photo"><img src="assets/torty/igra-v-kalmara.webp" alt="Игра в кальмара" loading="lazy"></div>
-        <span class="cake-tile__label">Игра в кальмара</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="кремовые" data-slug="kremovye" data-price="от 300 ₽/кг" data-vk="https://vk.com/album-184632420_279102052">
-        <span class="cake-tile__num">№ 310</span>
-        <div class="cake-tile__photo"><img src="assets/torty/kremovye.webp" alt="Кремовые" loading="lazy"></div>
-        <span class="cake-tile__label">Кремовые</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="лабубу" data-slug="labubu" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_307923348">
-        <span class="cake-tile__num">№ 698</span>
-        <div class="cake-tile__photo"><img src="assets/torty/labubu.webp" alt="Лабубу" loading="lazy"></div>
-        <span class="cake-tile__label">Лабубу</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="майнкрафт" data-slug="maynkraft" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279102103">
-        <span class="cake-tile__num">№ 155</span>
-        <div class="cake-tile__photo"><img src="assets/torty/maynkraft.webp" alt="Майнкрафт" loading="lazy"></div>
-        <span class="cake-tile__label">Майнкрафт</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="миньоны" data-slug="minony" data-price="от 800 ₽/кг" data-vk="https://vk.com/album-184632420_279101134">
-        <span class="cake-tile__num">№ 53</span>
-        <div class="cake-tile__photo"><img src="assets/torty/minony.webp" alt="Миньоны" loading="lazy"></div>
-        <span class="cake-tile__label">Миньоны</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="пираты" data-slug="piraty" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279101145">
-        <span class="cake-tile__num">№ 383</span>
-        <div class="cake-tile__photo"><img src="assets/torty/piraty.webp" alt="Пираты" loading="lazy"></div>
-        <span class="cake-tile__label">Пираты</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="дисней принцессы" data-slug="disney-princessy" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279101163">
-        <span class="cake-tile__num">№ 600</span>
-        <div class="cake-tile__photo"><img src="assets/torty/disney-princessy.webp" alt="Дисней принцессы" loading="lazy"></div>
-        <span class="cake-tile__label">Дисней принцессы</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="роблокс" data-slug="robloks" data-price="от 500 ₽/кг" data-vk="https://vk.com/album-184632420_296876475">
-        <span class="cake-tile__num">№ 652</span>
-        <div class="cake-tile__photo"><img src="assets/torty/robloks.webp" alt="Роблокс" loading="lazy"></div>
-        <span class="cake-tile__label">Роблокс</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="русалочка" data-slug="rusalochka" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279101154">
-        <span class="cake-tile__num">№ 74</span>
-        <div class="cake-tile__photo"><img src="assets/torty/rusalochka.webp" alt="Русалочка" loading="lazy"></div>
-        <span class="cake-tile__label">Русалочка</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="торт с фигуркой из шоколада" data-slug="tort-s-figurkoy-iz-shokolada" data-price="от 1000 ₽/кг" data-vk="https://vk.com/album-184632420_279133058">
-        <span class="cake-tile__num">№ 220</span>
-        <div class="cake-tile__photo"><img src="assets/torty/tort-s-figurkoy-iz-shokolada.webp" alt="Торт с фигуркой из шоколада" loading="lazy"></div>
-        <span class="cake-tile__label">Торт с фигуркой из шоколада</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="соник" data-slug="sonik" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_284129546">
-        <span class="cake-tile__num">№ 379</span>
-        <div class="cake-tile__photo"><img src="assets/torty/sonik.webp" alt="Соник" loading="lazy"></div>
-        <span class="cake-tile__label">Соник</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="соц.сети" data-slug="socseti" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279102082">
-        <span class="cake-tile__num">№ 286</span>
-        <div class="cake-tile__photo"><img src="assets/torty/socseti.webp" alt="Соц.сети" loading="lazy"></div>
-        <span class="cake-tile__label">Соц.сети</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="стенд офф" data-slug="stend-off" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_307215853">
-        <span class="cake-tile__num">№ 536</span>
-        <div class="cake-tile__photo"><img src="assets/torty/stend-off.webp" alt="Стенд Офф" loading="lazy"></div>
-        <span class="cake-tile__label">Стенд Офф</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="супергерои" data-slug="supergeroi-marvel" data-price="от 500 ₽/кг" data-vk="https://vk.com/album-184632420_279101172">
-        <span class="cake-tile__num">№ 605</span>
-        <div class="cake-tile__photo"><img src="assets/torty/supergeroi-marvel.webp" alt="Супергерои" loading="lazy"></div>
-        <span class="cake-tile__label">Супергерои</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="супер крылья" data-slug="super-krylya" data-price="от 600 ₽/кг" data-vk="https://vk.com/album-184632420_308867038">
-        <span class="cake-tile__num">№ 731</span>
-        <div class="cake-tile__photo"><img src="assets/torty/super-krylya.webp" alt="Супер Крылья" loading="lazy"></div>
-        <span class="cake-tile__label">Супер Крылья</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="тачки маквин" data-slug="tachki-makvin" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_279102017">
-        <span class="cake-tile__num">№ 97</span>
-        <div class="cake-tile__photo"><img src="assets/torty/tachki-makvin.webp" alt="Тачки Маквин" loading="lazy"></div>
-        <span class="cake-tile__label">Тачки Маквин</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="торт-цифра" data-slug="tort-cifra" data-price="от 600 ₽/кг" data-vk="https://vk.com/album-184632420_279102045">
-        <span class="cake-tile__num">№ 432</span>
-        <div class="cake-tile__photo"><img src="assets/torty/tort-cifra.webp" alt="Торт-цифра" loading="lazy"></div>
-        <span class="cake-tile__label">Торт-цифра</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="уэнсдей" data-slug="uensday" data-price="от 700 ₽/кг" data-vk="https://vk.com/album-184632420_296876465">
-        <span class="cake-tile__num">№ 658</span>
-        <div class="cake-tile__photo"><img src="assets/torty/uensday.webp" alt="Уэнсдей" loading="lazy"></div>
-        <span class="cake-tile__label">Уэнсдей</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="фантазийные герои" data-slug="raduzhnye-druzya" data-price="от 600 ₽/кг" data-vk="https://vk.com/album-184632420_307188452">
-        <span class="cake-tile__num">№ 644</span>
-        <div class="cake-tile__photo"><img src="assets/torty/raduzhnye-druzya.webp" alt="Фантазийные герои" loading="lazy"></div>
-        <span class="cake-tile__label">Фантазийные герои</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="холодное сердце" data-slug="holodnoe-serdce" data-price="от 600 ₽/кг" data-vk="https://vk.com/album-184632420_279128130">
-        <span class="cake-tile__num">№ 75</span>
-        <div class="cake-tile__photo"><img src="assets/torty/holodnoe-serdce.webp" alt="Холодное сердце" loading="lazy"></div>
-        <span class="cake-tile__label">Холодное сердце</span>
-      </div>
-
-      <div role="button" tabindex="0" aria-label="Открыть фото торта" class="cake-tile cake-tile--cutout" data-name="кэнди бар" data-slug="kendi-bar" data-price="8000 ₽ за комплект" data-vk="https://vk.com/album-184632420_279133068">
-        <div class="cake-tile__photo"><img src="assets/torty/kendi-bar.webp" alt="Кэнди Бар" loading="lazy"></div>
-        <span class="cake-tile__label">Кэнди Бар</span>
+      <div class="tk-step">
+        <span class="tk-step__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.7 2.7L16.5 9.5"/></svg></span>
+        <span class="tk-step__label">Или</span>
+        <p class="tk-step__title">Закажи готовое решение</p>
+        <p class="tk-step__sub">26 тортов с уже подобранным декором</p>
       </div>
     </div>
-    <p class="cake-empty" id="cakeEmpty">Ничего не нашлось — попробуйте другой запрос</p>
-
+    <div class="tk-rules">
+      <p class="tk-rules__title">Обратите внимание</p>
+      <ul>
+        <li>Торт с выбранным вами декором — от 2 кг</li>
+        <li>Готовое решение — от 1,5 кг</li>
+        <li>Хотите торт больше? Увеличивайте вес с шагом 0,5 кг</li>
+        <li>Заказ торта — не позднее чем за 3 дня до банкета</li>
+      </ul>
+      <div class="tk-rules__actions">
+        <a class="tk-btn" href="#calc">Посчитать стоимость</a>
+        <a class="tk-btn tk-btn--ghost" href="tel:+79065332255">+7 (906) 533-22-55</a>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="category pattern-dots-light" id="fillings" style="background:var(--bg-lavender)">
-  <div class="container fillings-section">
+  <div class="container">
     <h2>Начинки</h2>
-    <div class="fillings-formula">Стоимость торта = (цена начинки + цена оформления) × вес торта</div>
+    <div class="tk-filter" role="tablist" aria-label="Категория начинки">
+      <button type="button" class="tk-filter__btn is-active" data-fill-filter="all">Все</button>
+      <button type="button" class="tk-filter__btn" data-fill-filter="classic">Классика <small>2 000 ₽/кг</small></button>
+      <button type="button" class="tk-filter__btn" data-fill-filter="refined">Изысканность <small>1 800–2 100 ₽/кг</small></button>
+      <button type="button" class="tk-filter__btn" data-fill-filter="exotic">Экзотика <small>2 200–2 400 ₽/кг</small></button>
+    </div>
+    <div class="tk-fill-grid">
+      <article class="tk-fill" data-cat="classic">
+        <div class="tk-fill__photo"><img src="images/torty/nachinka-biskvitno-yogurtovyy-s-vishney.webp" alt="Бисквитно-йогуртовый с вишней" loading="lazy"><span class="tk-fill__num">1</span></div>
+        <div class="tk-fill__body">
+          <div class="tk-fill__meta"><span class="tk-fill__cat">Классика</span><span class="tk-fill__price">2 000 ₽/кг</span></div>
+          <h3 class="tk-fill__name">Бисквитно-йогуртовый с вишней</h3>
+          <div class="tk-fill__ingr"><span>вишнёвое пюре</span><span>ванильный бисквит</span><span>крем на основе йогурта</span></div>
+          <p class="tk-fill__desc">Нежный ванильный бисквит, прослоенный кремом на основе йогурта, сливок, вишнёвого пюре и французской меренги (специальным образом заваренный белок, добавляется в крем, создаёт нежнейшую суфлейную консистенцию), а также слоями из ягод вишни.</p>
+          <button type="button" class="tk-fill__pick" data-pick-filling="1">Посчитать с этой начинкой</button>
+        </div>
+      </article>
+      <article class="tk-fill" data-cat="classic">
+        <div class="tk-fill__photo"><img src="images/torty/nachinka-biskvitno-slivochnyy-s-klubnikoy.webp" alt="Бисквитно-сливочный с клубникой" loading="lazy"><span class="tk-fill__num">2</span></div>
+        <div class="tk-fill__body">
+          <div class="tk-fill__meta"><span class="tk-fill__cat">Классика</span><span class="tk-fill__price">2 000 ₽/кг</span></div>
+          <h3 class="tk-fill__name">Бисквитно-сливочный с клубникой</h3>
+          <div class="tk-fill__ingr"><span>ягоды клубники</span><span>нежный бисквит</span><span>сливочный крем</span></div>
+          <p class="tk-fill__desc">Нежный бисквитный торт с воздушным сливочным кремом, прослоенный ароматными клубничными слоями. Сладость бисквита и свежесть ягод создают идеальный баланс в каждом укусе.</p>
+          <button type="button" class="tk-fill__pick" data-pick-filling="2">Посчитать с этой начинкой</button>
+        </div>
+      </article>
+      <article class="tk-fill" data-cat="refined">
+        <div class="tk-fill__photo"><img src="images/torty/nachinka-molochnaya-devochka-s-persikom.webp" alt="Молочная девочка с персиком" loading="lazy"><span class="tk-fill__num">3</span></div>
+        <div class="tk-fill__body">
+          <div class="tk-fill__meta"><span class="tk-fill__cat">Изысканность</span><span class="tk-fill__price">2 100 ₽/кг</span></div>
+          <h3 class="tk-fill__name">Молочная девочка с персиком</h3>
+          <div class="tk-fill__ingr"><span>кусочки персика</span><span>сливочный крем</span><span>классический бисквит</span></div>
+          <p class="tk-fill__desc">Тончайшие слои белого бисквита, которые прослаиваются нежнейшим кремом на основе сливок и сгущённого молока, а также кусочками персика. Такой торт будет нежно таять во рту.</p>
+          <button type="button" class="tk-fill__pick" data-pick-filling="3">Посчитать с этой начинкой</button>
+        </div>
+      </article>
+      <article class="tk-fill" data-cat="refined">
+        <div class="tk-fill__photo"><img src="images/torty/nachinka-tiramisu-klubnichnyy.webp" alt="Тирамису клубничный" loading="lazy"><span class="tk-fill__num">4</span></div>
+        <div class="tk-fill__body">
+          <div class="tk-fill__meta"><span class="tk-fill__cat">Изысканность</span><span class="tk-fill__price">2 100 ₽/кг</span></div>
+          <h3 class="tk-fill__name">Тирамису клубничный</h3>
+          <div class="tk-fill__ingr"><span>печенье савоярди</span><span>много слоёв</span><span>клубничный крем маскарпоне</span></div>
+          <p class="tk-fill__desc">Воздушный бисквит и палочки савоярди, пропитанные нежным клубничным кремом на основе сыра маскарпоне и сливок с добавлением кусочков ягод. Пропитывается сиропом (без кофе).</p>
+          <button type="button" class="tk-fill__pick" data-pick-filling="4">Посчитать с этой начинкой</button>
+        </div>
+      </article>
+      <article class="tk-fill" data-cat="refined">
+        <div class="tk-fill__photo"><img src="images/torty/nachinka-morkovnyy.webp" alt="Морковный" loading="lazy"><span class="tk-fill__num">5</span></div>
+        <div class="tk-fill__body">
+          <div class="tk-fill__meta"><span class="tk-fill__cat">Изысканность</span><span class="tk-fill__price">2 100 ₽/кг</span></div>
+          <h3 class="tk-fill__name">Морковный</h3>
+          <div class="tk-fill__ingr"><span>сгущённое молоко</span><span>морковные коржи</span><span>сливочный крем-чиз</span></div>
+          <p class="tk-fill__desc">Ароматные морковные коржи с цедрой апельсина и специями прослаиваются воздушным кремом на основе творожного сыра, сливок и сгущённого молока. Эта начинка запомнится своей нежностью.</p>
+          <button type="button" class="tk-fill__pick" data-pick-filling="5">Посчитать с этой начинкой</button>
+        </div>
+      </article>
+      <article class="tk-fill" data-cat="refined">
+        <div class="tk-fill__photo"><img src="images/torty/nachinka-medovyy-s-orehom.webp" alt="Медовый со сметанным кремом и грецким орехом" loading="lazy"><span class="tk-fill__num">6</span></div>
+        <div class="tk-fill__body">
+          <div class="tk-fill__meta"><span class="tk-fill__cat">Изысканность</span><span class="tk-fill__price">1 800 ₽/кг</span></div>
+          <h3 class="tk-fill__name">Медовый со сметанным кремом и грецким орехом</h3>
+          <div class="tk-fill__ingr"><span>грецкий орех</span><span>медовые коржи</span><span>сливочно-сметанный крем</span></div>
+          <p class="tk-fill__desc">Нежные медовые коржи, пропитанные сладким мёдом, сочным воздушным сливочно-сметанным кремом и хрустящими кусочками грецкого ореха. Идеальное сочетание вкусов и текстур.</p>
+          <button type="button" class="tk-fill__pick" data-pick-filling="6">Посчитать с этой начинкой</button>
+        </div>
+      </article>
+      <article class="tk-fill" data-cat="refined">
+        <div class="tk-fill__photo"><img src="images/torty/nachinka-napoleon.webp" alt="Наполеон" loading="lazy"><span class="tk-fill__num">7</span></div>
+        <div class="tk-fill__body">
+          <div class="tk-fill__meta"><span class="tk-fill__cat">Изысканность</span><span class="tk-fill__price">2 000 ₽/кг</span></div>
+          <h3 class="tk-fill__name">Наполеон</h3>
+          <div class="tk-fill__ingr"><span>тонкие коржи</span><span>много слоёв</span><span>лёгкий крем</span></div>
+          <p class="tk-fill__desc">Множество тончайших коржей из рубленого теста, прослоенных заварным кремом со сливочным маслом и сгущённым молоком. Этот десерт сочетает в себе нежность коржей, кремовую текстуру и сладость сгущённого молока.</p>
+          <button type="button" class="tk-fill__pick" data-pick-filling="7">Посчитать с этой начинкой</button>
+        </div>
+      </article>
+      <article class="tk-fill" data-cat="exotic">
+        <div class="tk-fill__photo"><img src="images/torty/nachinka-shokoladnyy-karamel-orehi.webp" alt="Шоколадный с карамелью и орехами" loading="lazy"><span class="tk-fill__num">8</span></div>
+        <div class="tk-fill__body">
+          <div class="tk-fill__meta"><span class="tk-fill__cat">Экзотика</span><span class="tk-fill__price">2 400 ₽/кг</span></div>
+          <h3 class="tk-fill__name">Шоколадный с карамелью и орехами</h3>
+          <div class="tk-fill__ingr"><span>молочно-шоколадный мусс</span><span>сырный крем</span><span>шоколадный бисквит</span></div>
+          <p class="tk-fill__desc">Насыщенный шоколадный бисквит с сырным кремом, мягкой карамелью с кусочками арахиса и миндаля, а также муссом на основе молочного шоколада.</p>
+          <button type="button" class="tk-fill__pick" data-pick-filling="8">Посчитать с этой начинкой</button>
+        </div>
+      </article>
+      <article class="tk-fill" data-cat="exotic">
+        <div class="tk-fill__photo"><img src="images/torty/nachinka-krasnyy-barhat.webp" alt="Красный бархат" loading="lazy"><span class="tk-fill__num">9</span></div>
+        <div class="tk-fill__body">
+          <div class="tk-fill__meta"><span class="tk-fill__cat">Экзотика</span><span class="tk-fill__price">2 200 ₽/кг</span></div>
+          <h3 class="tk-fill__name">Красный бархат</h3>
+          <div class="tk-fill__ingr"><span>крем-чиз</span><span>красный бисквит</span><span>маскарпоне филадельфия</span></div>
+          <p class="tk-fill__desc">Его отличительная черта, по которой десерт сразу узнаётся, — тёмный красно-коричневый оттенок выпечки, разделённый слоями сырного крема на основе маскарпоне и сливок с прослойками малинового желе.</p>
+          <button type="button" class="tk-fill__pick" data-pick-filling="9">Посчитать с этой начинкой</button>
+        </div>
+      </article>
+      <article class="tk-fill" data-cat="exotic">
+        <div class="tk-fill__photo"><img src="images/torty/nachinka-fistashka-malina.webp" alt="Фисташка-малина" loading="lazy"><span class="tk-fill__num">10</span></div>
+        <div class="tk-fill__body">
+          <div class="tk-fill__meta"><span class="tk-fill__cat">Экзотика</span><span class="tk-fill__price">2 400 ₽/кг</span></div>
+          <h3 class="tk-fill__name">Фисташка-малина</h3>
+          <div class="tk-fill__ingr"><span>фисташковый бисквит</span><span>малиновое желе</span><span>сливочный крем</span></div>
+          <p class="tk-fill__desc">Изысканный торт с фисташковым бисквитом, двумя видами мусса (сливочный и фисташковый) и ароматной малиновой прослойкой. Насыщенный вкус и неповторимое сочетание ингредиентов для вашего праздника.</p>
+          <button type="button" class="tk-fill__pick" data-pick-filling="10">Посчитать с этой начинкой</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <div class="fillings-group">
-      <p class="fillings-group__title">Классические начинки</p>
-      <div class="fillings-group__rows">
-      <div class="filling-row"><span class="filling-row__name">Йогуртовая начинка</span><span class="filling-row__price">1 900 ₽/кг</span></div>
-      <div class="filling-row"><span class="filling-row__name">Молочная девочка</span><span class="filling-row__price">2 100 ₽/кг</span></div>
-      <div class="filling-row"><span class="filling-row__name">Крем-чиз с клубникой</span><span class="filling-row__price">2 200 ₽/кг</span></div>
-      <div class="filling-row"><span class="filling-row__name">Крем-чиз с малиной</span><span class="filling-row__price">2 200 ₽/кг</span></div>
-      <div class="filling-row"><span class="filling-row__name">Медовик</span><span class="filling-row__price">2 000 ₽/кг</span></div>
-      <div class="filling-row"><span class="filling-row__name">Шоколадность</span><span class="filling-row__price">2 300 ₽/кг</span></div>
-      <div class="filling-row"><span class="filling-row__name">Сникерс</span><span class="filling-row__price">2 000 ₽/кг</span></div>
-      <div class="filling-row"><span class="filling-row__name">Карамельная девочка</span><span class="filling-row__price">2 100 ₽/кг</span></div>
-      <div class="filling-row"><span class="filling-row__name">Детская начинка «Агуша»</span><span class="filling-row__price">1 900 ₽/кг</span></div>
-      <div class="filling-row"><span class="filling-row__name">Чизкейк</span><span class="filling-row__price">2 300 ₽/кг</span></div>
-      <div class="filling-row"><span class="filling-row__name">Радужная начинка</span><span class="filling-row__price">2 200 ₽/кг</span></div>
-      <div class="filling-row"><span class="filling-row__name">Красный бархат</span><span class="filling-row__price">2 200 ₽/кг</span></div>
+<section class="category pattern-dots" id="ready" style="background:var(--bg)">
+  <div class="container">
+    <h2>Готовые решения</h2>
+    <div class="tk-rules tk-rules--inline">
+      <ul>
+        <li>Цена декора указана для торта весом до 2 кг — за каждые следующие 0,5 кг декор дороже на 500 ₽</li>
+        <li>Начинку выбираете сами — её стоимость в цену декора не входит</li>
+        <li>Минимальный вес торта — 1,5 кг</li>
+      </ul>
+    </div>
+    <div class="tk-filter" role="tablist" aria-label="Тематика">
+      <button type="button" class="tk-filter__btn is-active" data-ready-filter="all">Все</button>
+      <button type="button" class="tk-filter__btn" data-ready-filter="thematic">Тематические</button>
+      <button type="button" class="tk-filter__btn" data-ready-filter="cartoon">Мультяшные</button>
+      <button type="button" class="tk-filter__btn" data-ready-filter="baby">Малышам</button>
+      <button type="button" class="tk-filter__btn" data-ready-filter="tender">Нежность</button>
+      <button type="button" class="tk-filter__btn" data-ready-filter="girls">Девочкам</button>
+      <button type="button" class="tk-filter__btn" data-ready-filter="cosplay">Косплей</button>
+    </div>
+    <div class="cake-tile-grid tk-ready-grid" id="readyGrid">
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="thematic" data-num="23" data-decor="2500" aria-label="Готовое решение № 23, декор 2500 рублей">
+        <span class="cake-tile__num">№ 23</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-23.webp" alt="Торт № 23 — Тематические" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 2 500 ₽<span class="tk-ready__note">Два яруса, от 4 кг</span></span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="thematic" data-num="24" data-decor="1800" aria-label="Готовое решение № 24, декор 1800 рублей">
+        <span class="cake-tile__num">№ 24</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-24.webp" alt="Торт № 24 — Тематические" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 800 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="thematic" data-num="25" data-decor="1800" aria-label="Готовое решение № 25, декор 1800 рублей">
+        <span class="cake-tile__num">№ 25</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-25.webp" alt="Торт № 25 — Тематические" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 800 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="cartoon" data-num="26" data-decor="1600" aria-label="Готовое решение № 26, декор 1600 рублей">
+        <span class="cake-tile__num">№ 26</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-26.webp" alt="Торт № 26 — Мультяшные" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 600 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="cartoon" data-num="27" data-decor="1600" aria-label="Готовое решение № 27, декор 1600 рублей">
+        <span class="cake-tile__num">№ 27</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-27.webp" alt="Торт № 27 — Мультяшные" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 600 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="cartoon" data-num="28" data-decor="1500" aria-label="Готовое решение № 28, декор 1500 рублей">
+        <span class="cake-tile__num">№ 28</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-28.webp" alt="Торт № 28 — Мультяшные" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 500 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="cartoon" data-num="29" data-decor="2200" aria-label="Готовое решение № 29, декор 2200 рублей">
+        <span class="cake-tile__num">№ 29</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-29.webp" alt="Торт № 29 — Мультяшные" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 2 200 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="thematic" data-num="30" data-decor="1700" aria-label="Готовое решение № 30, декор 1700 рублей">
+        <span class="cake-tile__num">№ 30</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-30.webp" alt="Торт № 30 — Тематические" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 700 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="thematic" data-num="31" data-decor="1700" aria-label="Готовое решение № 31, декор 1700 рублей">
+        <span class="cake-tile__num">№ 31</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-31.webp" alt="Торт № 31 — Тематические" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 700 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="thematic" data-num="32" data-decor="1700" aria-label="Готовое решение № 32, декор 1700 рублей">
+        <span class="cake-tile__num">№ 32</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-32.webp" alt="Торт № 32 — Тематические" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 700 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="thematic" data-num="33" data-decor="1700" aria-label="Готовое решение № 33, декор 1700 рублей">
+        <span class="cake-tile__num">№ 33</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-33.webp" alt="Торт № 33 — Тематические" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 700 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="thematic" data-num="34" data-decor="2500" aria-label="Готовое решение № 34, декор 2500 рублей">
+        <span class="cake-tile__num">№ 34</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-34.webp" alt="Торт № 34 — Тематические" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 2 500 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="baby" data-num="35" data-decor="1600" aria-label="Готовое решение № 35, декор 1600 рублей">
+        <span class="cake-tile__num">№ 35</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-35.webp" alt="Торт № 35 — Малышам" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 600 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="baby" data-num="36" data-decor="2500" aria-label="Готовое решение № 36, декор 2500 рублей">
+        <span class="cake-tile__num">№ 36</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-36.webp" alt="Торт № 36 — Малышам" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 2 500 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="baby" data-num="37" data-decor="1600" aria-label="Готовое решение № 37, декор 1600 рублей">
+        <span class="cake-tile__num">№ 37</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-37.webp" alt="Торт № 37 — Малышам" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 600 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="tender" data-num="38" data-decor="1500" aria-label="Готовое решение № 38, декор 1500 рублей">
+        <span class="cake-tile__num">№ 38</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-38.webp" alt="Торт № 38 — Нежность" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 500 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="tender" data-num="39" data-decor="1500" aria-label="Готовое решение № 39, декор 1500 рублей">
+        <span class="cake-tile__num">№ 39</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-39.webp" alt="Торт № 39 — Нежность" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 500 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="tender" data-num="40" data-decor="1500" aria-label="Готовое решение № 40, декор 1500 рублей">
+        <span class="cake-tile__num">№ 40</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-40.webp" alt="Торт № 40 — Нежность" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 500 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="tender" data-num="41" data-decor="1800" aria-label="Готовое решение № 41, декор 1800 рублей">
+        <span class="cake-tile__num">№ 41</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-41.webp" alt="Торт № 41 — Нежность" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 800 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="tender" data-num="42" data-decor="1500" aria-label="Готовое решение № 42, декор 1500 рублей">
+        <span class="cake-tile__num">№ 42</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-42.webp" alt="Торт № 42 — Нежность" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 500 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="tender" data-num="43" data-decor="1600" aria-label="Готовое решение № 43, декор 1600 рублей">
+        <span class="cake-tile__num">№ 43</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-43.webp" alt="Торт № 43 — Нежность" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 600 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="girls" data-num="44" data-decor="1600" aria-label="Готовое решение № 44, декор 1600 рублей">
+        <span class="cake-tile__num">№ 44</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-44.webp" alt="Торт № 44 — Девочкам" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 600 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="girls" data-num="45" data-decor="3000" aria-label="Готовое решение № 45, декор 3000 рублей">
+        <span class="cake-tile__num">№ 45</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-45.webp" alt="Торт № 45 — Девочкам" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 3 000 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="cosplay" data-num="46" data-decor="1600" aria-label="Готовое решение № 46, декор 1600 рублей">
+        <span class="cake-tile__num">№ 46</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-46.webp" alt="Торт № 46 — Косплей" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 600 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="cosplay" data-num="47" data-decor="1600" aria-label="Готовое решение № 47, декор 1600 рублей">
+        <span class="cake-tile__num">№ 47</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-47.webp" alt="Торт № 47 — Косплей" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 600 ₽</span>
+      </div>
+      <div role="button" tabindex="0" class="cake-tile cake-tile--cutout tk-ready" data-theme="cosplay" data-num="48" data-decor="1600" aria-label="Готовое решение № 48, декор 1600 рублей">
+        <span class="cake-tile__num">№ 48</span>
+        <div class="cake-tile__photo"><img src="images/torty/gotovyy-48.webp" alt="Торт № 48 — Косплей" loading="lazy"></div>
+        <span class="cake-tile__label">Декор: 1 600 ₽</span>
       </div>
     </div>
+    <p class="tk-footnote">Об изменении тематики торта уточняйте у менеджера. Выбирайте готовое предложение или покажите ваш торт мечты — рассчитаем стоимость и приготовим специально для вас.</p>
+  </div>
+</section>
 
-    <div class="fillings-group">
-      <p class="fillings-group__title">Парфе (с растительными сливками)</p>
-      <div class="fillings-group__rows">
-      <div class="filling-row"><span class="filling-row__name">Ореховое парфе</span><span class="filling-row__price">1 700 ₽/кг</span></div>
-      <div class="filling-row"><span class="filling-row__name">Вишнёвое парфе</span><span class="filling-row__price">1 700 ₽/кг</span></div>
-      <div class="filling-row"><span class="filling-row__name">Парфе Бабл-Гам</span><span class="filling-row__price">1 700 ₽/кг</span></div>
-      <div class="filling-row"><span class="filling-row__name">Клубничное парфе</span><span class="filling-row__price">1 700 ₽/кг</span></div>
-      <div class="filling-row"><span class="filling-row__name">Манго-Маракуйя</span><span class="filling-row__price">2 300 ₽/кг</span></div>
-      <div class="filling-row"><span class="filling-row__name">Чёрный лес</span><span class="filling-row__price">2 200 ₽/кг</span></div>
-      <div class="filling-row"><span class="filling-row__name">Манго-Маракуйя-Шоколад</span><span class="filling-row__price">2 300 ₽/кг</span></div>
+<section class="category pattern-dots-light" id="decor" style="background:var(--bg-lavender)">
+  <div class="container">
+    <h2>Декор</h2>
+    <div class="tk-decor">
+      <div class="tk-decor__list">
+        <div class="tk-decor__row"><span class="tk-decor__num">11</span><span class="tk-decor__name">Шоколадные фигурки</span><span class="tk-decor__price">450 ₽ / шт</span></div>
+        <div class="tk-decor__row"><span class="tk-decor__num">12</span><span class="tk-decor__name">Леденцы 5–7 см</span><span class="tk-decor__price">80 ₽ / шт</span></div>
+        <div class="tk-decor__row"><span class="tk-decor__num">13</span><span class="tk-decor__name">Леденцы 8–10 см</span><span class="tk-decor__price">120 ₽ / шт</span></div>
+        <div class="tk-decor__row"><span class="tk-decor__num">14</span><span class="tk-decor__name">Пряники</span><span class="tk-decor__price">350 ₽ / шт</span></div>
+        <div class="tk-decor__row"><span class="tk-decor__num">15</span><span class="tk-decor__name">Пряники 3D</span><span class="tk-decor__price">550 ₽ / шт</span></div>
+        <div class="tk-decor__row"><span class="tk-decor__num">16</span><span class="tk-decor__name">Меренга</span><span class="tk-decor__price">80 ₽ / шт</span></div>
+        <div class="tk-decor__row"><span class="tk-decor__num">17</span><span class="tk-decor__name">Шоколадный декор<small>на выбор: 2 шт — 5 см, 3 шт — 4 см или 5 шт — 3 см</small></span><span class="tk-decor__price">750 ₽ / набор</span></div>
+        <div class="tk-decor__row"><span class="tk-decor__num">18</span><span class="tk-decor__name">Надпись из шоколада<small>цена за букву или цифру</small></span><span class="tk-decor__price">10 ₽ / знак</span></div>
+        <div class="tk-decor__row"><span class="tk-decor__num">19</span><span class="tk-decor__name">Печать на мастике<small>сахарная бумага, цена за печать на одной части торта (боковой или верхней)</small></span><span class="tk-decor__price">550 ₽ / сторона</span></div>
+        <div class="tk-decor__row"><span class="tk-decor__num">20</span><span class="tk-decor__name">Роспись торта</span><span class="tk-decor__price">600 ₽</span></div>
+        <div class="tk-decor__row"><span class="tk-decor__num">21</span><span class="tk-decor__name">Фрукты / ягоды для декора<small>цена может меняться от сезона и ассортимента</small></span><span class="tk-decor__price">от 500 ₽ / 150 г</span></div>
+        <div class="tk-decor__row"><span class="tk-decor__num">22</span><span class="tk-decor__name">Декорации на торте<small>забор, цветы, трава, веточки, камни — цена дополнительно согласовывается с кондитером</small></span><span class="tk-decor__price">400 ₽</span></div>
+      </div>
+      <div class="tk-decor__examples">
+        <p class="tk-decor__ex-title">Примеры декора</p>
+        <div class="tk-decor__ex-grid">
+          <img src="images/torty/dekor-primer-1.webp" alt="Пример декора торта 1" loading="lazy">
+          <img src="images/torty/dekor-primer-2.webp" alt="Пример декора торта 2" loading="lazy">
+          <img src="images/torty/dekor-primer-3.webp" alt="Пример декора торта 3" loading="lazy">
+          <img src="images/torty/dekor-primer-4.webp" alt="Пример декора торта 4" loading="lazy">
+          <img src="images/torty/dekor-primer-5.webp" alt="Пример декора торта 5" loading="lazy">
+          <img src="images/torty/dekor-primer-6.webp" alt="Пример декора торта 6" loading="lazy">
+        </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="fillings-group">
-      <p class="fillings-group__title">Десерты</p>
-      <div class="fillings-group__rows">
-      <div class="filling-row"><span class="filling-row__name">Меренга</span><span class="filling-row__price">150 ₽/шт</span></div>
-      <div class="filling-row"><span class="filling-row__name">Леденец</span><span class="filling-row__price">80 ₽/шт</span></div>
-      <div class="filling-row"><span class="filling-row__name">Печенье с декором</span><span class="filling-row__price">150 ₽/шт</span></div>
-      <div class="filling-row"><span class="filling-row__name">Поп-кейк</span><span class="filling-row__price">220 ₽/шт</span></div>
-      <div class="filling-row"><span class="filling-row__name">Кап-кейк</span><span class="filling-row__price">350 ₽/шт</span></div>
-      <div class="filling-row"><span class="filling-row__name">Трайфл</span><span class="filling-row__price">395 ₽/шт</span></div>
-      <div class="filling-row"><span class="filling-row__name">Донат-мафин</span><span class="filling-row__price">265 ₽/шт</span></div>
-      <div class="filling-row"><span class="filling-row__name">Поп-Кейк Эскимо</span><span class="filling-row__price">285 ₽/шт</span></div>
+<section class="category pattern-dots" id="calc" style="background:var(--bg)">
+  <div class="container">
+    <h2>Калькулятор торта</h2>
+    <div class="tk-calc">
+      <div class="tk-calc__form">
+        <div class="tk-calc__mode" role="tablist" aria-label="Тип торта">
+          <button type="button" class="tk-calc__mode-btn is-active" data-mode="custom">Соберу сам</button>
+          <button type="button" class="tk-calc__mode-btn" data-mode="ready">Готовое решение</button>
+        </div>
+
+        <label class="tk-calc__field">
+          <span class="tk-calc__label">Начинка</span>
+          <select id="calcFilling">
+            <option value="1">1. Бисквитно-йогуртовый с вишней — 2 000 ₽/кг</option>
+            <option value="2">2. Бисквитно-сливочный с клубникой — 2 000 ₽/кг</option>
+            <option value="3">3. Молочная девочка с персиком — 2 100 ₽/кг</option>
+            <option value="4">4. Тирамису клубничный — 2 100 ₽/кг</option>
+            <option value="5">5. Морковный — 2 100 ₽/кг</option>
+            <option value="6">6. Медовый со сметанным кремом и грецким орехом — 1 800 ₽/кг</option>
+            <option value="7">7. Наполеон — 2 000 ₽/кг</option>
+            <option value="8">8. Шоколадный с карамелью и орехами — 2 400 ₽/кг</option>
+            <option value="9">9. Красный бархат — 2 200 ₽/кг</option>
+            <option value="10">10. Фисташка-малина — 2 400 ₽/кг</option>
+          </select>
+        </label>
+
+        <label class="tk-calc__field" data-only="ready" hidden>
+          <span class="tk-calc__label">Готовое решение</span>
+          <select id="calcReady">
+            <optgroup label="Тематические">
+              <option value="23">№ 23 — декор 2 500 ₽ (два яруса, от 4 кг)</option>
+              <option value="24" selected>№ 24 — декор 1 800 ₽</option>
+              <option value="25">№ 25 — декор 1 800 ₽</option>
+              <option value="30">№ 30 — декор 1 700 ₽</option>
+              <option value="31">№ 31 — декор 1 700 ₽</option>
+              <option value="32">№ 32 — декор 1 700 ₽</option>
+              <option value="33">№ 33 — декор 1 700 ₽</option>
+              <option value="34">№ 34 — декор 2 500 ₽</option>
+            </optgroup>
+            <optgroup label="Мультяшные">
+              <option value="26">№ 26 — декор 1 600 ₽</option>
+              <option value="27">№ 27 — декор 1 600 ₽</option>
+              <option value="28">№ 28 — декор 1 500 ₽</option>
+              <option value="29">№ 29 — декор 2 200 ₽</option>
+            </optgroup>
+            <optgroup label="Малышам">
+              <option value="35">№ 35 — декор 1 600 ₽</option>
+              <option value="36">№ 36 — декор 2 500 ₽</option>
+              <option value="37">№ 37 — декор 1 600 ₽</option>
+            </optgroup>
+            <optgroup label="Нежность">
+              <option value="38">№ 38 — декор 1 500 ₽</option>
+              <option value="39">№ 39 — декор 1 500 ₽</option>
+              <option value="40">№ 40 — декор 1 500 ₽</option>
+              <option value="41">№ 41 — декор 1 800 ₽</option>
+              <option value="42">№ 42 — декор 1 500 ₽</option>
+              <option value="43">№ 43 — декор 1 600 ₽</option>
+            </optgroup>
+            <optgroup label="Девочкам">
+              <option value="44">№ 44 — декор 1 600 ₽</option>
+              <option value="45">№ 45 — декор 3 000 ₽</option>
+            </optgroup>
+            <optgroup label="Косплей">
+              <option value="46">№ 46 — декор 1 600 ₽</option>
+              <option value="47">№ 47 — декор 1 600 ₽</option>
+              <option value="48">№ 48 — декор 1 600 ₽</option>
+            </optgroup>
+          </select>
+        </label>
+
+        <div class="tk-calc__field">
+          <span class="tk-calc__label">Вес торта</span>
+          <div class="tk-stepper" id="calcWeight">
+            <button type="button" data-wstep="-1" aria-label="Уменьшить вес">−</button>
+            <output id="calcWeightOut">2 кг</output>
+            <button type="button" data-wstep="1" aria-label="Увеличить вес">+</button>
+          </div>
+          <small class="tk-calc__hint" id="calcWeightHint">минимум 2 кг, шаг 0,5 кг</small>
+        </div>
+
+        <a class="tk-calc__mini" href="#calcResult">Итого: <strong id="calcMini">0 ₽</strong></a>
+        <div class="tk-calc__field" data-only="custom">
+          <span class="tk-calc__label">Декор</span>
+          <div class="tk-calc__decor">
+          <div class="tk-calc__decor-row"><span class="tk-calc__decor-name">Шоколадные фигурки<small>450 ₽ / шт</small></span><div class="tk-stepper tk-stepper--sm"><button type="button" data-step="-1" aria-label="Меньше">−</button><output data-decor-out="fig">0</output><button type="button" data-step="1" aria-label="Больше">+</button><input type="hidden" data-decor="fig" value="0" data-max="20"></div></div>
+          <div class="tk-calc__decor-row"><span class="tk-calc__decor-name">Леденцы 5–7 см<small>80 ₽ / шт</small></span><div class="tk-stepper tk-stepper--sm"><button type="button" data-step="-1" aria-label="Меньше">−</button><output data-decor-out="led57">0</output><button type="button" data-step="1" aria-label="Больше">+</button><input type="hidden" data-decor="led57" value="0" data-max="40"></div></div>
+          <div class="tk-calc__decor-row"><span class="tk-calc__decor-name">Леденцы 8–10 см<small>120 ₽ / шт</small></span><div class="tk-stepper tk-stepper--sm"><button type="button" data-step="-1" aria-label="Меньше">−</button><output data-decor-out="led810">0</output><button type="button" data-step="1" aria-label="Больше">+</button><input type="hidden" data-decor="led810" value="0" data-max="40"></div></div>
+          <div class="tk-calc__decor-row"><span class="tk-calc__decor-name">Пряники<small>350 ₽ / шт</small></span><div class="tk-stepper tk-stepper--sm"><button type="button" data-step="-1" aria-label="Меньше">−</button><output data-decor-out="pryan">0</output><button type="button" data-step="1" aria-label="Больше">+</button><input type="hidden" data-decor="pryan" value="0" data-max="20"></div></div>
+          <div class="tk-calc__decor-row"><span class="tk-calc__decor-name">Пряники 3D<small>550 ₽ / шт</small></span><div class="tk-stepper tk-stepper--sm"><button type="button" data-step="-1" aria-label="Меньше">−</button><output data-decor-out="pryan3d">0</output><button type="button" data-step="1" aria-label="Больше">+</button><input type="hidden" data-decor="pryan3d" value="0" data-max="20"></div></div>
+          <div class="tk-calc__decor-row"><span class="tk-calc__decor-name">Меренга<small>80 ₽ / шт</small></span><div class="tk-stepper tk-stepper--sm"><button type="button" data-step="-1" aria-label="Меньше">−</button><output data-decor-out="mer">0</output><button type="button" data-step="1" aria-label="Больше">+</button><input type="hidden" data-decor="mer" value="0" data-max="40"></div></div>
+          <div class="tk-calc__decor-row"><span class="tk-calc__decor-name">Шоколадный декор<small>750 ₽ / набор</small></span><div class="tk-stepper tk-stepper--sm"><button type="button" data-step="-1" aria-label="Меньше">−</button><output data-decor-out="choc">0</output><button type="button" data-step="1" aria-label="Больше">+</button><input type="hidden" data-decor="choc" value="0" data-max="10"></div></div>
+          <div class="tk-calc__decor-row"><span class="tk-calc__decor-name">Надпись из шоколада<small>10 ₽ / знак</small></span><div class="tk-stepper tk-stepper--sm"><button type="button" data-step="-1" aria-label="Меньше">−</button><output data-decor-out="text">0</output><button type="button" data-step="1" aria-label="Больше">+</button><input type="hidden" data-decor="text" value="0" data-max="60"></div></div>
+          <div class="tk-calc__decor-row"><span class="tk-calc__decor-name">Печать на мастике<small>550 ₽ / сторона</small></span><div class="tk-stepper tk-stepper--sm"><button type="button" data-step="-1" aria-label="Меньше">−</button><output data-decor-out="print">0</output><button type="button" data-step="1" aria-label="Больше">+</button><input type="hidden" data-decor="print" value="0" data-max="2"></div></div>
+          <div class="tk-calc__decor-row"><span class="tk-calc__decor-name">Роспись торта<small>600 ₽</small></span><label class="tk-switch"><input type="checkbox" data-decor="paint"><span></span></label></div>
+          <div class="tk-calc__decor-row"><span class="tk-calc__decor-name">Фрукты / ягоды для декора<small>от 500 ₽ за 150 г</small></span><div class="tk-stepper tk-stepper--sm"><button type="button" data-step="-1" aria-label="Меньше">−</button><output data-decor-out="fruit">0</output><button type="button" data-step="1" aria-label="Больше">+</button><input type="hidden" data-decor="fruit" value="0" data-max="10"></div></div>
+          <div class="tk-calc__decor-row"><span class="tk-calc__decor-name">Декорации на торте<small>400 ₽</small></span><label class="tk-switch"><input type="checkbox" data-decor="deco"><span></span></label></div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="tk-calc__result" id="calcResult" aria-live="polite">
+        <p class="tk-calc__res-title">Предварительная стоимость</p>
+        <div class="tk-calc__lines" id="calcLines"></div>
+        <div class="tk-calc__total"><span>Итого</span><strong id="calcTotal">0 ₽</strong></div>
+        <p class="tk-calc__note" id="calcNote">Точную стоимость подтвердит кондитер. Цвет покрытия обсудите при заказе.</p>
+        <a class="tk-btn tk-btn--block" href="tel:+79065332255">Заказать: +7 (906) 533-22-55</a>
+        <p class="tk-calc__note">Заказ — не позднее чем за 3 дня до банкета</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="category pattern-dots-light" id="candy" style="background:var(--bg-lavender)">
+  <div class="container">
+    <h2>Кэнди-бар</h2>
+    <div class="tk-candy__photos">
+      <figure class="tk-candy__item"><img src="images/torty/kendi-kapkeyk.webp" alt="Капкейк" loading="lazy"><figcaption>Капкейк</figcaption></figure>
+      <figure class="tk-candy__item"><img src="images/torty/kendi-eskimo.webp" alt="Эскимо глазированное" loading="lazy"><figcaption>Эскимо глазированное</figcaption></figure>
+      <figure class="tk-candy__item"><img src="images/torty/kendi-bankeyk.webp" alt="Банкейк" loading="lazy"><figcaption>Банкейк</figcaption></figure>
+      <figure class="tk-candy__item"><img src="images/torty/kendi-beze.webp" alt="Безе на палочке" loading="lazy"><figcaption>Безе на палочке</figcaption></figure>
+      <figure class="tk-candy__item"><img src="images/torty/kendi-makarons.webp" alt="Французский макаронс" loading="lazy"><figcaption>Французский макаронс</figcaption></figure>
+    </div>
+    <div class="tk-candy">
+      <div class="tk-candy__card">
+        <h3>Кэнди-бар «Тематический»</h3>
+        <p>Выбирай тему праздника, а мы создадим сладкий стол под неё. Дизайнерские элементы, причудливые детали с любимыми героями, сладости, цвет, формы и оформление будут в точности передавать атмосферу сказки.</p>
+        <span class="tk-candy__min">От 4 наименований, от 7 позиций каждого</span>
+      </div>
+      <div class="tk-candy__card">
+        <h3>Кэнди-бар «Сборный»</h3>
+        <p>Дополните детский стол сладостями. Яркие и привлекательные вкусняшки — рай для детей. Гости и именинник смогут вдоволь насладиться любимыми лакомствами.</p>
+        <span class="tk-candy__min">От 4 наименований, минимум 5 позиций каждого</span>
+      </div>
+      <div class="tk-candy__card tk-candy__card--prices">
+        <h3>Цены</h3>
+        <div class="tk-candy__rows">
+          <div class="filling-row"><span class="filling-row__name">Капкейк</span><span class="filling-row__price">250 ₽/шт</span></div>
+          <div class="filling-row"><span class="filling-row__name">Эскимо глазированное</span><span class="filling-row__price">250 ₽/шт</span></div>
+          <div class="filling-row"><span class="filling-row__name">Банкейк</span><span class="filling-row__price">280 ₽/шт</span></div>
+          <div class="filling-row"><span class="filling-row__name">Безе на палочке</span><span class="filling-row__price">150 ₽/шт</span></div>
+          <div class="filling-row"><span class="filling-row__name">Французский макаронс</span><span class="filling-row__price">200 ₽/шт</span></div>
+        </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="category pattern-dots category--tight" id="sweet-mk" style="background:var(--bg)">
+  <div class="container">
+    <h2>Сладкий мастер-класс</h2>
+    <div class="tk-mk">
+      <div class="tk-mk__text">
+        <div class="tk-mk__meta"><span class="meta-chip meta-chip--price">6 000 ₽</span><span class="meta-chip">от 5 до 10 детей</span></div>
+        <p class="tk-mk__lead">Устройте увлекательный мастер-класс по рисованию на пряниках!</p>
+        <p>Каждый участник получит пряник, кисточки и краски различных цветов. Кондитер будет наставлять гостей, давать советы по рисованию и помогать воплотить их идеи на сладком полотне.</p>
+        <p>Подарите себе и своим гостям незабываемые моменты творчества и радости на празднике с мастер-классом по рисованию на пряниках!</p>
+      </div>
+      <div class="tk-mk__photos">
+        <img src="images/torty/sladkiy-mk-1.webp" alt="Мастер-класс по росписи пряников" loading="lazy">
+        <img src="images/torty/sladkiy-mk-2.webp" alt="Дети расписывают пряники" loading="lazy">
+        <img src="images/torty/sladkiy-mk-3.webp" alt="Кондитер помогает детям" loading="lazy">
+      </div>
+    </div>
+    <div class="callout">Заказ торта осуществляется не позднее чем за 3 дня до банкета. Бронируй: <strong><a href="tel:+79065332255">+7 (906) 533-22-55</a></strong></div>
   </div>
 </section>
 
@@ -429,23 +621,19 @@
     </button>
     <div class="cake-lightbox__title" id="cakeLightboxTitle"></div>
     <div class="cake-lightbox__stage">
-      <button class="cake-lightbox__arrow cake-lightbox__arrow--prev" type="button" id="cakeLightboxPrev" aria-label="Предыдущее фото">
+      <button class="cake-lightbox__arrow cake-lightbox__arrow--prev" type="button" id="cakeLightboxPrev" aria-label="Предыдущий торт">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
       </button>
       <div class="cake-lightbox__photo">
         <span class="cake-lightbox__num" id="cakeLightboxNum"></span>
         <img class="cake-lightbox__img" id="cakeLightboxImg" src="" alt="">
       </div>
-      <button class="cake-lightbox__arrow cake-lightbox__arrow--next" type="button" id="cakeLightboxNext" aria-label="Следующее фото">
+      <button class="cake-lightbox__arrow cake-lightbox__arrow--next" type="button" id="cakeLightboxNext" aria-label="Следующий торт">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
       </button>
     </div>
-    <div class="cake-lightbox__counter" id="cakeLightboxCounter"></div>
     <div class="cake-lightbox__price" id="cakeLightboxPrice"></div>
-    <a class="cake-lightbox__vk" id="cakeLightboxVk" href="#" target="_blank" rel="noopener">
-      Ещё примеры
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-    </a>
+    <button type="button" class="cake-lightbox__vk tk-lightbox-calc" id="cakeLightboxCalc">Посчитать с этим декором</button>
   </div>
 </div>
 
@@ -458,7 +646,6 @@
         <a href="komnaty.html" class="nav-card"><h3>Комнаты</h3></a>
         <a href="paketnye-predlozheniya.html" class="nav-card"><h3>Пакетные предложения</h3></a>
         <a href="vpechatleniya.html" class="nav-card"><h3>Впечатления</h3></a>
-        <a href="menu.html" class="nav-card"><h3>Ресторан</h3></a>
         <a href="vypusknoy.html" class="nav-card"><h3>Выпускные</h3></a>
       </div>
     </div>
@@ -477,14 +664,13 @@
       <a href="komnaty.html">Комнаты</a>
       <a href="paketnye-predlozheniya.html">Пакетные предложения</a>
       <a href="vpechatleniya.html">Впечатления</a>
-      <a href="menu.html">Ресторан</a>
       <a href="vypusknoy.html">Выпускные</a>
       <a href="torty.html">Торты</a>
     </div>
     <div>
       <h4>Контакты</h4>
-      <a href="#">г. Нижний Новгород, ул. Коминтерна, д. 11, ТЦ «Лента», 1 этаж</a>
-      <a href="tel:+79625097493">+7 (962) 509-74-93</a>
+      <a href="#">г. Орёл, ТРЦ РИО, Московское шоссе 175, 1 этаж</a>
+      <a href="tel:84862220617">8 486 222-06-17</a>
       <a href="#">Ежедневно 10:00–22:00 (в ПН с 12:00)</a>
     </div>
   </div>
@@ -494,8 +680,8 @@
 <div class="booking-widget">
   <span class="booking-widget__label">Выбрал? Скорее бронируй</span>
   <div class="booking-widget__buttons">
-    <a class="booking-widget__btn booking-widget__btn--max" href="https://max.ru/u/f9LHodD0cOKV9M2KDDiBx8fNEqb_g3ZmF00SS4EC49Xgkt-IOQAAAx3q99s" target="_blank" rel="noopener" aria-label="Написать в MAX"><img src="assets/icons/max.png" alt="MAX"></a>
-    <a class="booking-widget__btn booking-widget__btn--tg" href="https://t.me/jucity52" target="_blank" rel="noopener" aria-label="Написать в Telegram"><img src="assets/icons/telegram.png" alt="Telegram"></a>
+    <a class="booking-widget__btn booking-widget__btn--max" href="https://max.ru/u/f9LHodD0cOL3-hnFCTv-07i00iQsmKJ5-jpR4Wm17N9NCynj4RikhUPHmns" target="_blank" rel="noopener" aria-label="Написать в MAX"><img src="images/icons/max.png" alt="MAX"></a>
+    <a class="booking-widget__btn booking-widget__btn--tg" href="https://t.me/jucity57" target="_blank" rel="noopener" aria-label="Написать в Telegram"><img src="images/icons/telegram.png" alt="Telegram"></a>
   </div>
 </div>
 <button class="to-top" id="toTop" aria-label="Наверх">
@@ -505,113 +691,228 @@
 
 <script src="main.js"></script>
 <script>
+const TK = {"fillings": {"1": {"name": "Бисквитно-йогуртовый с вишней", "price": 2000}, "2": {"name": "Бисквитно-сливочный с клубникой", "price": 2000}, "3": {"name": "Молочная девочка с персиком", "price": 2100}, "4": {"name": "Тирамису клубничный", "price": 2100}, "5": {"name": "Морковный", "price": 2100}, "6": {"name": "Медовый со сметанным кремом и грецким орехом", "price": 1800}, "7": {"name": "Наполеон", "price": 2000}, "8": {"name": "Шоколадный с карамелью и орехами", "price": 2400}, "9": {"name": "Красный бархат", "price": 2200}, "10": {"name": "Фисташка-малина", "price": 2400}}, "ready": {"23": {"decor": 2500, "theme": "Тематические", "minW": 4.0, "baseW": 4.0}, "24": {"decor": 1800, "theme": "Тематические", "minW": 1.5, "baseW": 2.0}, "25": {"decor": 1800, "theme": "Тематические", "minW": 1.5, "baseW": 2.0}, "26": {"decor": 1600, "theme": "Мультяшные", "minW": 1.5, "baseW": 2.0}, "27": {"decor": 1600, "theme": "Мультяшные", "minW": 1.5, "baseW": 2.0}, "28": {"decor": 1500, "theme": "Мультяшные", "minW": 1.5, "baseW": 2.0}, "29": {"decor": 2200, "theme": "Мультяшные", "minW": 1.5, "baseW": 2.0}, "30": {"decor": 1700, "theme": "Тематические", "minW": 1.5, "baseW": 2.0}, "31": {"decor": 1700, "theme": "Тематические", "minW": 1.5, "baseW": 2.0}, "32": {"decor": 1700, "theme": "Тематические", "minW": 1.5, "baseW": 2.0}, "33": {"decor": 1700, "theme": "Тематические", "minW": 1.5, "baseW": 2.0}, "34": {"decor": 2500, "theme": "Тематические", "minW": 1.5, "baseW": 2.0}, "35": {"decor": 1600, "theme": "Малышам", "minW": 1.5, "baseW": 2.0}, "36": {"decor": 2500, "theme": "Малышам", "minW": 1.5, "baseW": 2.0}, "37": {"decor": 1600, "theme": "Малышам", "minW": 1.5, "baseW": 2.0}, "38": {"decor": 1500, "theme": "Нежность", "minW": 1.5, "baseW": 2.0}, "39": {"decor": 1500, "theme": "Нежность", "minW": 1.5, "baseW": 2.0}, "40": {"decor": 1500, "theme": "Нежность", "minW": 1.5, "baseW": 2.0}, "41": {"decor": 1800, "theme": "Нежность", "minW": 1.5, "baseW": 2.0}, "42": {"decor": 1500, "theme": "Нежность", "minW": 1.5, "baseW": 2.0}, "43": {"decor": 1600, "theme": "Нежность", "minW": 1.5, "baseW": 2.0}, "44": {"decor": 1600, "theme": "Девочкам", "minW": 1.5, "baseW": 2.0}, "45": {"decor": 3000, "theme": "Девочкам", "minW": 1.5, "baseW": 2.0}, "46": {"decor": 1600, "theme": "Косплей", "minW": 1.5, "baseW": 2.0}, "47": {"decor": 1600, "theme": "Косплей", "minW": 1.5, "baseW": 2.0}, "48": {"decor": 1600, "theme": "Косплей", "minW": 1.5, "baseW": 2.0}}, "decor": {"fig": {"name": "Шоколадные фигурки", "price": 450, "unit": "шт", "from": false}, "led57": {"name": "Леденцы 5–7 см", "price": 80, "unit": "шт", "from": false}, "led810": {"name": "Леденцы 8–10 см", "price": 120, "unit": "шт", "from": false}, "pryan": {"name": "Пряники", "price": 350, "unit": "шт", "from": false}, "pryan3d": {"name": "Пряники 3D", "price": 550, "unit": "шт", "from": false}, "mer": {"name": "Меренга", "price": 80, "unit": "шт", "from": false}, "choc": {"name": "Шоколадный декор", "price": 750, "unit": "набор", "from": false}, "text": {"name": "Надпись из шоколада", "price": 10, "unit": "знак", "from": false}, "print": {"name": "Печать на мастике", "price": 550, "unit": "сторона", "from": false}, "paint": {"name": "Роспись торта", "price": 600, "unit": "", "from": false}, "fruit": {"name": "Фрукты / ягоды для декора", "price": 500, "unit": "150 г", "from": true}, "deco": {"name": "Декорации на торте", "price": 400, "unit": "", "from": true}}};
+</script>
+<script>
 (function () {
-  const GALLERY_DATA = {"schenyachiy-patrul":[{"img":"assets/torty/schenyachiy-patrul-3.webp","num":"557"},{"img":"assets/torty/schenyachiy-patrul-4.webp","num":"4"}],"dinozavry":[{"img":"assets/torty/dinozavry-2.webp","num":""},{"img":"assets/torty/dinozavry-3.webp","num":"11"}],"cherepashki-nindzya":[{"img":"assets/torty/cherepashki-nindzya-3.webp","num":"564"},{"img":"assets/torty/cherepashki-nindzya-4.webp","num":"16"}],"edinorog":[{"img":"assets/torty/edinorog-2.webp","num":"18"},{"img":"assets/torty/edinorog-3.webp","num":"252"}],"litl-poni":[{"img":"assets/torty/litl-poni-2.webp","num":"567"},{"img":"assets/torty/litl-poni-3.webp","num":"568"}],"lego":[{"img":"assets/torty/lego-2.webp","num":"26"},{"img":"assets/torty/lego-3.webp","num":"27"}],"kukly-lol":[{"img":"assets/torty/kukly-lol-2.webp","num":"359"},{"img":"assets/torty/kukly-lol-3.webp","num":"575"}],"kosmos":[{"img":"assets/torty/kosmos-2.webp","num":"353"},{"img":"assets/torty/kosmos-3.webp","num":"582"}],"ledi-bag":[{"img":"assets/torty/ledi-bag-2.webp","num":"50"},{"img":"assets/torty/ledi-bag-3.webp","num":"51"}],"kendi-bar":[{"img":"assets/torty/kendi-bar-3.webp","num":""},{"img":"assets/torty/kendi-bar-4.webp","num":""}],"tort-s-yagodami":[{"img":"assets/torty/tort-s-yagodami-2.webp","num":"672"},{"img":"assets/torty/tort-s-yagodami-3.webp","num":"123"}],"devochki-princessy":[{"img":"assets/torty/devochki-princessy-2.webp","num":"262"},{"img":"assets/torty/devochki-princessy-3.webp","num":"577"}],"mikki-i-minni-maus":[{"img":"assets/torty/mikki-i-minni-maus-2.webp","num":"242"},{"img":"assets/torty/mikki-i-minni-maus-3.webp","num":"596"}],"among-us":[{"img":"assets/torty/among-us-2.webp","num":"682"}],"devochki-ledi":[{"img":"assets/torty/devochki-ledi-2.webp","num":"594"},{"img":"assets/torty/devochki-ledi-3.webp","num":"595"}],"bez-dekora":[{"img":"assets/torty/bez-dekora-2.webp","num":"674"},{"img":"assets/torty/bez-dekora-3.webp","num":"677"}],"bravl-stars":[{"img":"assets/torty/bravl-stars-2.webp","num":"639"}],"transport":[{"img":"assets/torty/transport-2.webp","num":"438"},{"img":"assets/torty/transport-3.webp","num":"439"}],"spanch-bob":[{"img":"assets/torty/spanch-bob-2.webp","num":"635"}],"torty-dlya-devochek":[{"img":"assets/torty/torty-dlya-devochek-2.webp","num":"662"},{"img":"assets/torty/torty-dlya-devochek-3.webp","num":"663"}],"malchiki":[{"img":"assets/torty/malchiki-2.webp","num":"667"},{"img":"assets/torty/malchiki-3.webp","num":"669"}],"zvezdnye-voyny":[{"img":"assets/torty/zvezdnye-voyny-2.webp","num":"352"},{"img":"assets/torty/zvezdnye-voyny-3.webp","num":"580"}],"igra-v-kalmara":[{"img":"assets/torty/igra-v-kalmara-2.webp","num":"657"}],"kremovye":[{"img":"assets/torty/kremovye-2.webp","num":"625"},{"img":"assets/torty/kremovye-3.webp","num":"631"}],"labubu":[{"img":"assets/torty/labubu-2.webp","num":"744"}],"maynkraft":[{"img":"assets/torty/maynkraft-2.webp","num":"210"},{"img":"assets/torty/maynkraft-3.webp","num":"637"}],"minony":[{"img":"assets/torty/minony-2.webp","num":"55"},{"img":"assets/torty/minony-3.webp","num":"861"}],"piraty":[{"img":"assets/torty/piraty-2.webp","num":"585"},{"img":"assets/torty/piraty-3.webp","num":"586"}],"disney-princessy":[{"img":"assets/torty/disney-princessy-2.webp","num":"602"},{"img":"assets/torty/disney-princessy-3.webp","num":"603"}],"robloks":[{"img":"assets/torty/robloks-2.webp","num":"653"},{"img":"assets/torty/robloks-3.webp","num":"655"}],"rusalochka":[{"img":"assets/torty/rusalochka-2.webp","num":"180"},{"img":"assets/torty/rusalochka-3.webp","num":"181"}],"tort-s-figurkoy-iz-shokolada":[{"img":"assets/torty/tort-s-figurkoy-iz-shokolada-2.webp","num":"224"},{"img":"assets/torty/tort-s-figurkoy-iz-shokolada-3.webp","num":"228"}],"sonik":[{"img":"assets/torty/sonik-2.webp","num":"325"}],"socseti":[{"img":"assets/torty/socseti-2.webp","num":"152"},{"img":"assets/torty/socseti-3.webp","num":"285"}],"stend-off":[{"img":"assets/torty/stend-off-2.webp","num":"678"},{"img":"assets/torty/stend-off-3.webp","num":"680"}],"supergeroi-marvel":[{"img":"assets/torty/supergeroi-marvel-2.webp","num":"609"},{"img":"assets/torty/supergeroi-marvel-3.webp","num":"610"}],"super-krylya":[{"img":"assets/torty/super-krylya-2.webp","num":"733"}],"tachki-makvin":[{"img":"assets/torty/tachki-makvin-2.webp","num":"98"}],"tort-cifra":[{"img":"assets/torty/tort-cifra-2.webp","num":"256"},{"img":"assets/torty/tort-cifra-3.webp","num":"434"}],"uensday":[{"img":"assets/torty/uensday-2.webp","num":"659"}],"raduzhnye-druzya":[{"img":"assets/torty/raduzhnye-druzya-2.webp","num":"646"},{"img":"assets/torty/raduzhnye-druzya-3.webp","num":"650"}],"holodnoe-serdce":[{"img":"assets/torty/holodnoe-serdce-2.webp","num":"599"}],"sport":[{"img":"assets/torty/sport-2.webp","num":"615"},{"img":"assets/torty/sport-3.webp","num":"617"}],"zveryata":[{"img":"assets/torty/zveryata-2.webp","num":"621"},{"img":"assets/torty/zveryata-3.webp","num":"627"}]};
-
-  const tiles = document.querySelectorAll('.cake-tile');
-  // Цена находится в data-price, но выводим её и на самой карточке —
-  // пользователю планшета не нужно открывать карточку, чтобы увидеть цену.
-  tiles.forEach(tile => {
-    const price = tile.getAttribute('data-price');
-    if (price && !tile.querySelector('.cake-tile__price')) {
-      const priceEl = document.createElement('span');
-      priceEl.className = 'cake-tile__price';
-      priceEl.textContent = price;
-      tile.appendChild(priceEl);
+  // ---------- подменю: подсветка текущего раздела ----------
+  const sections = document.querySelectorAll('section.category[id]');
+  const links = document.querySelectorAll('#subnavInner a');
+  const linkByHash = {};
+  links.forEach(a => { linkByHash[a.getAttribute('href')] = a; });
+  function setActive(id) {
+    links.forEach(a => a.classList.remove('active'));
+    const link = linkByHash['#' + id];
+    if (link) {
+      link.classList.add('active');
+      link.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
     }
+  }
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) setActive(e.target.id); });
+    }, { rootMargin: '-160px 0px -60% 0px', threshold: 0 });
+    sections.forEach(s => io.observe(s));
+  }
+  if (location.hash) setActive(location.hash.slice(1));
+
+  const fmt = n => Math.round(n).toLocaleString('ru-RU').replace(/ |\s/g, ' ') + ' ₽';
+  const fmtKg = w => (Number.isInteger(w) ? String(w) : String(w).replace('.', ',')) + ' кг';
+  const calcSection = document.getElementById('calc');
+  const goCalc = () => calcSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  // ---------- фильтр начинок ----------
+  const fillBtns = document.querySelectorAll('[data-fill-filter]');
+  const fillCards = document.querySelectorAll('.tk-fill');
+  fillBtns.forEach(btn => btn.addEventListener('click', () => {
+    const f = btn.dataset.fillFilter;
+    fillBtns.forEach(b => b.classList.toggle('is-active', b === btn));
+    fillCards.forEach(c => { c.hidden = !(f === 'all' || c.dataset.cat === f); });
+  }));
+
+  // ---------- фильтр готовых решений ----------
+  const readyBtns = document.querySelectorAll('[data-ready-filter]');
+  const readyTiles = Array.from(document.querySelectorAll('.tk-ready'));
+  readyBtns.forEach(btn => btn.addEventListener('click', () => {
+    const f = btn.dataset.readyFilter;
+    readyBtns.forEach(b => b.classList.toggle('is-active', b === btn));
+    readyTiles.forEach(t => t.classList.toggle('is-hidden-search', !(f === 'all' || t.dataset.theme === f)));
+  }));
+
+  // ---------- лайтбокс готовых решений ----------
+  const lb = document.getElementById('cakeLightbox');
+  const lbImg = document.getElementById('cakeLightboxImg');
+  const lbNum = document.getElementById('cakeLightboxNum');
+  const lbTitle = document.getElementById('cakeLightboxTitle');
+  const lbPrice = document.getElementById('cakeLightboxPrice');
+  const lbCalc = document.getElementById('cakeLightboxCalc');
+  let lbList = [], lbIdx = 0;
+  function lbRender() {
+    const t = lbList[lbIdx];
+    const num = t.dataset.num, r = TK.ready[num];
+    lbImg.src = t.querySelector('img').src;
+    lbImg.alt = 'Торт № ' + num;
+    lbNum.textContent = '№ ' + num;
+    lbTitle.textContent = r.theme;
+    lbPrice.textContent = 'Декор: ' + fmt(r.decor) + (r.baseW > 2 ? ' — два яруса, от 4 кг' : ' — для торта до 2 кг');
+  }
+  function lbOpen(tile) {
+    lbList = readyTiles.filter(t => !t.classList.contains('is-hidden-search'));
+    lbIdx = Math.max(0, lbList.indexOf(tile));
+    lbRender();
+    lb.classList.add('open');
+  }
+  const lbClose = () => lb.classList.remove('open');
+  readyTiles.forEach(t => {
+    t.addEventListener('click', () => lbOpen(t));
+    t.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); lbOpen(t); } });
   });
-  const searchInput = document.getElementById('cakeSearch');
-  const emptyMsg = document.getElementById('cakeEmpty');
-
-  searchInput.addEventListener('input', () => {
-    const q = searchInput.value.trim().toLowerCase();
-    let visibleCount = 0;
-    tiles.forEach(tile => {
-      const haystack = `${tile.getAttribute('data-name') || ''} ${tile.querySelector('.cake-tile__num')?.textContent || ''} ${tile.getAttribute('data-slug') || ''}`.toLowerCase();
-      const match = haystack.includes(q);
-      tile.classList.toggle('is-hidden-search', !match);
-      if (match) visibleCount++;
-    });
-    emptyMsg.classList.toggle('is-visible', visibleCount === 0);
+  document.getElementById('cakeLightboxPrev').addEventListener('click', () => { lbIdx = (lbIdx - 1 + lbList.length) % lbList.length; lbRender(); });
+  document.getElementById('cakeLightboxNext').addEventListener('click', () => { lbIdx = (lbIdx + 1) % lbList.length; lbRender(); });
+  document.getElementById('cakeLightboxClose').addEventListener('click', lbClose);
+  lb.addEventListener('click', e => { if (e.target === lb) lbClose(); });
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') lbClose();
+    if (e.key === 'ArrowLeft') document.getElementById('cakeLightboxPrev').click();
+    if (e.key === 'ArrowRight') document.getElementById('cakeLightboxNext').click();
   });
 
-  const lightbox = document.getElementById('cakeLightbox');
-  const lightboxImg = document.getElementById('cakeLightboxImg');
-  const lightboxNum = document.getElementById('cakeLightboxNum');
-  const lightboxTitle = document.getElementById('cakeLightboxTitle');
-  const lightboxPrice = document.getElementById('cakeLightboxPrice');
-  const lightboxClose = document.getElementById('cakeLightboxClose');
-  const lightboxPrev = document.getElementById('cakeLightboxPrev');
-  const lightboxNext = document.getElementById('cakeLightboxNext');
-  const lightboxCounter = document.getElementById('cakeLightboxCounter');
-  const lightboxVk = document.getElementById('cakeLightboxVk');
+  // ---------- калькулятор ----------
+  const STEP = 0.5, MAX_W = 15, EXTRA_PER_STEP = 500;
+  const state = { mode: 'custom', weight: 2 };
+  const selFill = document.getElementById('calcFilling');
+  const selReady = document.getElementById('calcReady');
+  const wOut = document.getElementById('calcWeightOut');
+  const wHint = document.getElementById('calcWeightHint');
+  const wMinus = document.querySelector('[data-wstep="-1"]');
+  const wPlus = document.querySelector('[data-wstep="1"]');
+  const linesEl = document.getElementById('calcLines');
+  const totalEl = document.getElementById('calcTotal');
+  const modeBtns = document.querySelectorAll('[data-mode]');
+  const onlyBlocks = document.querySelectorAll('[data-only]');
 
-  let currentPhotos = [];
-  let currentIndex = 0;
-  let currentTile = null;
+  function minWeight() {
+    return state.mode === 'ready' ? TK.ready[selReady.value].minW : 2;
+  }
+  function clampWeight() {
+    const mn = minWeight();
+    if (state.weight < mn) state.weight = mn;
+    if (state.weight > MAX_W) state.weight = MAX_W;
+  }
+  function line(label, sub, amount, from) {
+    return '<div class="tk-calc__line"><span>' + label + (sub ? '<small>' + sub + '</small>' : '') +
+      '</span><strong>' + (from ? 'от ' : '') + fmt(amount) + '</strong></div>';
+  }
+  function render() {
+    clampWeight();
+    const w = state.weight, mn = minWeight();
+    wOut.textContent = fmtKg(w);
+    wMinus.disabled = w <= mn;
+    wPlus.disabled = w >= MAX_W;
+    wHint.textContent = 'минимум ' + fmtKg(mn) + ', шаг 0,5 кг';
 
-  function renderPhoto() {
-    const photo = currentPhotos[currentIndex];
-    lightboxImg.src = photo.img;
-    lightboxNum.textContent = photo.num ? `№ ${photo.num}` : '';
-    lightboxNum.style.display = photo.num ? 'block' : 'none';
-    const multi = currentPhotos.length > 1;
-    lightboxPrev.style.display = multi ? 'flex' : 'none';
-    lightboxNext.style.display = multi ? 'flex' : 'none';
-    lightboxCounter.style.display = multi ? 'block' : 'none';
-    lightboxCounter.textContent = multi ? `${currentIndex + 1} / ${currentPhotos.length}` : '';
+    const f = TK.fillings[selFill.value];
+    const fillSum = f.price * w;
+    let html = line('Начинка «' + f.name + '»', fmt(f.price) + ' × ' + fmtKg(w), fillSum);
+    let total = fillSum, from = false;
+
+    if (state.mode === 'ready') {
+      const r = TK.ready[selReady.value];
+      const steps = Math.max(0, Math.round((w - r.baseW) / STEP));
+      const dec = r.decor + steps * EXTRA_PER_STEP;
+      const sub = steps
+        ? fmt(r.decor) + ' + ' + fmt(EXTRA_PER_STEP) + ' × ' + steps
+        : (r.baseW > 2 ? 'два яруса, от 4 кг' : 'для торта до 2 кг');
+      html += line('Декор готового решения № ' + selReady.value, sub, dec);
+      total += dec;
+    } else {
+      let any = false;
+      document.querySelectorAll('.tk-calc__decor [data-decor]').forEach(inp => {
+        const d = TK.decor[inp.dataset.decor];
+        const q = inp.type === 'checkbox' ? (inp.checked ? 1 : 0) : Number(inp.value);
+        if (!q) return;
+        any = true;
+        const sum = d.price * q;
+        const sub = inp.type === 'checkbox' ? (d.from ? 'цена согласовывается с кондитером' : '')
+          : q + ' × ' + fmt(d.price) + (d.unit === '150 г' ? ' за 150 г' : '');
+        html += line(d.name, sub, sum, d.from);
+        if (d.from) from = true;
+        total += sum;
+      });
+      if (!any) html += line('Декор', 'не выбран — добавьте ниже', 0);
+    }
+    linesEl.innerHTML = html;
+    totalEl.textContent = (from ? 'от ' : '') + fmt(total);
+    document.getElementById('calcMini').textContent = totalEl.textContent;
   }
 
-  tiles.forEach(tile => {
-    tile.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); tile.click(); }
+  function setMode(mode) {
+    state.mode = mode;
+    modeBtns.forEach(b => {
+      const on = b.dataset.mode === mode;
+      b.classList.toggle('is-active', on);
+      b.setAttribute('aria-selected', String(on));
     });
-    tile.addEventListener('click', () => {
-      currentTile = tile;
-      const img = tile.querySelector('img');
-      const name = tile.querySelector('.cake-tile__label').textContent;
-      const price = tile.getAttribute('data-price');
-      const slug = tile.getAttribute('data-slug');
-      const mainNumEl = tile.querySelector('.cake-tile__num');
-      const mainNum = mainNumEl ? mainNumEl.textContent.replace('№', '').trim() : '';
-      const vk = tile.getAttribute('data-vk') || '';
-      lightboxVk.href = vk || '#';
-      lightboxVk.style.display = vk ? 'flex' : 'none';
+    onlyBlocks.forEach(el => { el.hidden = el.dataset.only !== mode; });
+    if (mode === 'custom' && state.weight < 2) state.weight = 2;
+    render();
+  }
 
-      currentPhotos = [{ img: img.src, num: mainNum }];
-      if (slug && GALLERY_DATA[slug]) {
-        currentPhotos = currentPhotos.concat(GALLERY_DATA[slug]);
-      }
-      currentIndex = 0;
+  modeBtns.forEach(b => b.addEventListener('click', () => setMode(b.dataset.mode)));
+  selFill.addEventListener('change', render);
+  let prevReady = selReady.value;
+  selReady.addEventListener('change', () => {
+    const was = TK.ready[prevReady], r = TK.ready[selReady.value];
+    // ушли с двухъярусного (от 4 кг) на обычный — возвращаем привычные 2 кг
+    if (was && was.minW > r.minW && state.weight === was.minW) state.weight = 2;
+    if (state.weight < r.minW) state.weight = r.minW;
+    prevReady = selReady.value;
+    render();
+  });
+  wMinus.addEventListener('click', () => { state.weight = Math.round((state.weight - STEP) * 2) / 2; render(); });
+  wPlus.addEventListener('click', () => { state.weight = Math.round((state.weight + STEP) * 2) / 2; render(); });
 
-      lightboxImg.alt = name;
-      lightboxTitle.textContent = name;
-      lightboxPrice.textContent = price ? `Оформление — ${price}` : '';
-      lightboxPrice.style.display = price ? 'block' : 'none';
-      renderPhoto();
-      lightbox.classList.add('open');
+  document.querySelectorAll('.tk-calc__decor .tk-stepper').forEach(st => {
+    const inp = st.querySelector('input[data-decor]');
+    const out = st.querySelector('output');
+    const max = Number(inp.dataset.max);
+    const [minus, plus] = st.querySelectorAll('button');
+    function upd() {
+      const v = Number(inp.value);
+      out.textContent = v;
+      minus.disabled = v <= 0;
+      plus.disabled = v >= max;
+    }
+    st.addEventListener('click', e => {
+      const b = e.target.closest('[data-step]');
+      if (!b) return;
+      inp.value = Math.min(max, Math.max(0, Number(inp.value) + Number(b.dataset.step)));
+      upd(); render();
     });
+    upd();
+  });
+  document.querySelectorAll('.tk-calc__decor input[type="checkbox"]').forEach(c => c.addEventListener('change', render));
+
+  // «Посчитать с этой начинкой»
+  document.querySelectorAll('[data-pick-filling]').forEach(b => b.addEventListener('click', () => {
+    selFill.value = b.dataset.pickFilling;
+    render();
+    goCalc();
+  }));
+  // «Посчитать с этим декором» из лайтбокса
+  lbCalc.addEventListener('click', () => {
+    const num = lbList[lbIdx].dataset.num;
+    selReady.value = num;
+    selReady.dispatchEvent(new Event('change'));
+    setMode('ready');
+    if (state.weight < TK.ready[num].minW) state.weight = TK.ready[num].minW;
+    render();
+    lbClose();
+    goCalc();
   });
 
-  lightboxPrev.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + currentPhotos.length) % currentPhotos.length;
-    renderPhoto();
-  });
-  lightboxNext.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % currentPhotos.length;
-    renderPhoto();
-  });
-
-  function closeLightbox() { lightbox.classList.remove('open'); }
-  lightboxClose.addEventListener('click', closeLightbox);
-  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
-  document.addEventListener('keydown', (e) => {
-    if (!lightbox.classList.contains('open')) return;
-    if (e.key === 'Escape') closeLightbox();
-    if (e.key === 'ArrowLeft') lightboxPrev.click();
-    if (e.key === 'ArrowRight') lightboxNext.click();
-  });
-
+  setMode('custom');
 })();
 </script>
 </body>
