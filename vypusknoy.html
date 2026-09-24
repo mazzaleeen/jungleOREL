@@ -48,14 +48,14 @@
       <a class="logo" href="index.html"><img src="images/image.png" alt="Джунгли Сити"></a>
       <a class="news-badge" href="https://orel.jucity.ru/" target="_blank" rel="noopener"><span>Новости, афиша, акции</span></a>
       </div>
-      <nav class="nav" id="nav">
-        <div class="nav-item"><a class="nav-btn" href="komnaty.html">Комнаты</a></div>
-
+      <nav class="nav" id="nav" aria-label="Разделы сайта">
+        <div class="nav-panel__head">
+          <span class="nav-panel__title">Разделы</span>
+          <button class="nav-close" type="button" id="navClose" aria-label="Закрыть меню"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+        </div>
+        <div class="nav-item"><a class="nav-btn" href="komnaty.html"><span class="nav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11 12 4l8 7"/><path d="M6 10v9h12v-9"/><path d="M10 19v-5h4v5"/></svg></span><span class="nav-txt"><span class="nav-t">Комнаты</span><span class="nav-s">7 домиков бесплатно на 3 часа</span></span></a></div>
         <div class="nav-item">
-          <button class="nav-btn" type="button" data-flyout-trigger="anim-nav">
-            Анимации
-            <span class="nav-btn__caret" aria-hidden="true"></span>
-          </button>
+          <button class="nav-btn" type="button" data-flyout-trigger="anim-nav"><span class="nav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4Z"/><path d="M18 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8Z"/></svg></span><span class="nav-txt"><span class="nav-t">Анимации</span><span class="nav-s">Программы, герои, шоу</span></span><span class="nav-btn__caret" aria-hidden="true"></span></button>
           <div class="flyout" data-flyout="anim-nav">
             <a href="animations.html#new">Новинки</a>
             <a href="animations.html#themed">Тематические анимации</a>
@@ -67,13 +67,19 @@
             <a href="animations.html#shows">Шоу-программы</a>
           </div>
         </div>
-
-        <div class="nav-item"><a class="nav-btn" href="paketnye-predlozheniya.html">Пакетные предложения</a></div>
-        <div class="nav-item"><a class="nav-btn" href="vpechatleniya.html">Впечатления</a></div>
-        <div class="nav-item"><a class="nav-btn active" href="vypusknoy.html">Выпускные</a></div>
-        <div class="nav-item"><a class="nav-btn" href="torty.html">Торты</a></div>
+        <div class="nav-item"><a class="nav-btn" href="paketnye-predlozheniya.html"><span class="nav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="16" height="11" rx="1.5"/><path d="M3 9h18M12 9v11"/><path d="M12 9c-1.4-3.6-5.5-3.4-5-.2M12 9c1.4-3.6 5.5-3.4 5-.2"/></svg></span><span class="nav-txt"><span class="nav-t">Пакетные предложения</span><span class="nav-s">Готовые пакеты с угощениями</span></span></a></div>
+        <div class="nav-item"><a class="nav-btn" href="vpechatleniya.html"><span class="nav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="9" rx="5.5" ry="6.5"/><path d="M12 15.5l-1 2h2l-1-2M12 17.5c0 2 1.5 2.5 1.5 4"/></svg></span><span class="nav-txt"><span class="nav-t">Впечатления</span><span class="nav-s">Шары, пиньята, аквагрим</span></span></a></div>
+        <div class="nav-item"><a class="nav-btn active" href="vypusknoy.html" aria-current="page"><span class="nav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9 12 5l9.5 4L12 13Z"/><path d="M6.5 11v4.5c3 2.4 8 2.4 11 0V11"/><path d="M21.5 9v5"/></svg></span><span class="nav-txt"><span class="nav-t">Выпускные</span><span class="nav-s">Выпускной 2027</span></span></a></div>
+        <div class="nav-item"><a class="nav-btn" href="torty.html"><span class="nav-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M5 20v-7h14v7"/><path d="M5 16.5c2 1 3.5-1 5 0s3 1 4.5 0 3-1 4.5 0"/><path d="M12 13V9"/><path d="M12 6.5c-.7-.9-2-.5-2 .5 0 1 2 2 2 2s2-1 2-2c0-1-1.3-1.4-2-.5Z"/></svg></span><span class="nav-txt"><span class="nav-t">Торты</span><span class="nav-s">Начинки, декор, калькулятор</span></span></a></div>
+        <div class="nav-panel__foot">
+          <a class="nav-foot__phone" href="tel:84862220617"><small>Бронирование</small>8 486 222-06-17</a>
+          <div class="nav-foot__msg">
+            <a href="https://max.ru/u/f9LHodD0cOL3-hnFCTv-07i00iQsmKJ5-jpR4Wm17N9NCynj4RikhUPHmns" target="_blank" rel="noopener" aria-label="Написать в MAX"><img src="images/icons/max.png" alt="MAX"></a>
+            <a href="https://t.me/jucity57" target="_blank" rel="noopener" aria-label="Написать в Telegram"><img src="images/icons/telegram.png" alt="Telegram"></a>
+          </div>
+        </div>
       </nav>
-      <button class="burger" id="burger" aria-label="Разделы"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Разделы</button>
+      <button class="burger" id="burger" type="button" aria-label="Открыть разделы" aria-controls="nav" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Разделы</button>
     </div>
 </div>
 

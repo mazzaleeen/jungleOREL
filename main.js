@@ -6,9 +6,50 @@ if (toTop) {
 
 const burger = document.getElementById('burger');
 const nav = document.getElementById('nav');
+let closeNav = () => {};
 if (burger && nav) {
-  burger.addEventListener('click', () => nav.classList.toggle('open'));
-  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+  // шапка уезжает через transform — выносим панель в body, чтобы position:fixed работал от окна
+  document.body.appendChild(nav);
+  const backdrop = document.createElement('div');
+  backdrop.className = 'nav-backdrop';
+  document.body.appendChild(backdrop);
+
+  function openNav() {
+    nav.classList.add('open');
+    backdrop.classList.add('open');
+    document.documentElement.classList.add('nav-open');
+    burger.setAttribute('aria-expanded', 'true');
+    const first = nav.querySelector('.nav-close');
+    if (first) setTimeout(() => first.focus({ preventScroll: true }), 50);
+  }
+  closeNav = function () {
+    if (!nav.classList.contains('open')) return;
+    nav.classList.remove('open');
+    backdrop.classList.remove('open');
+    document.documentElement.classList.remove('nav-open');
+    burger.setAttribute('aria-expanded', 'false');
+  };
+  burger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    nav.classList.contains('open') ? closeNav() : openNav();
+  });
+  backdrop.addEventListener('click', closeNav);
+  const closeBtn = document.getElementById('navClose');
+  if (closeBtn) closeBtn.addEventListener('click', closeNav);
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeNav(); });
+  // если текущий раздел — анимации, сразу раскрываем его подпункты
+  const animTrigger = nav.querySelector('.nav-btn.active[data-flyout-trigger]');
+  if (animTrigger) {
+    const panel = nav.querySelector('[data-flyout="' + animTrigger.getAttribute('data-flyout-trigger') + '"]');
+    if (panel) {
+      panel.dataset.keepOpen = '1';
+      // после общей инициализации выпадашек (она выставляет aria-expanded=false)
+      setTimeout(() => { panel.classList.add('open'); animTrigger.setAttribute('aria-expanded', 'true'); }, 0);
+      // по нажатию пользователь снова управляет сам — можно свернуть
+      animTrigger.addEventListener('pointerdown', () => { delete panel.dataset.keepOpen; }, { once: true });
+    }
+  }
 }
 
 const flyoutTriggers = document.querySelectorAll('[data-flyout-trigger]');
@@ -16,7 +57,7 @@ const allFlyouts = document.querySelectorAll('[data-flyout]');
 
 function closeAllFlyouts(except) {
   allFlyouts.forEach(f => {
-    if (f !== except) f.classList.remove('open');
+    if (f !== except && !f.dataset.keepOpen) f.classList.remove('open');
   });
   flyoutTriggers.forEach(t => {
     if (t !== except) t.setAttribute('aria-expanded', 'false');
@@ -80,7 +121,7 @@ document.addEventListener('keydown', (e) => {
       setHidden(false);
     } else if (y > lastY + 4) {
       setHidden(true);
-      if (nav) nav.classList.remove('open');
+      closeNav();
     } else if (y < lastY - 4) {
       setHidden(false);
     }
