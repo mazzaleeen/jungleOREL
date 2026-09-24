@@ -1132,11 +1132,8 @@ body{
 .tk-step__label{display:block;font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--green-dark);margin-bottom:6px}
 .tk-step__title{font-size:15px;font-weight:900;color:var(--purple-1);text-transform:uppercase;line-height:1.25}
 .tk-step__sub{font-size:13px;font-weight:700;opacity:.7;margin-top:6px}
-.tk-step:last-child{background:linear-gradient(160deg,var(--purple-1),var(--purple-2));border-color:transparent;color:#fff}
-.tk-step:last-child .tk-step__icon{background:rgba(255,255,255,.16);color:#fff}
-.tk-step:last-child .tk-step__label{color:var(--green)}
-.tk-step:last-child .tk-step__title{color:#fff}
-.tk-step:last-child .tk-step__sub{opacity:.85}
+.tk-step:last-child{border:2.5px solid var(--purple-1);box-shadow:0 10px 26px rgba(74,17,133,.12)}
+.tk-step:last-child .tk-step__icon{background:var(--purple-1);color:#fff}
 
 .tk-rules{background:#fff;border:1.5px dashed var(--purple-1);border-radius:22px;padding:22px 26px}
 .tk-rules__title{font-weight:900;color:var(--purple-1);text-transform:uppercase;font-size:14px;margin-bottom:12px}
@@ -1178,6 +1175,7 @@ body{
 .tk-fill__pick:hover{color:var(--purple-1)}
 
 .cake-page .tk-ready .cake-tile__label{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:15px;color:var(--green-dark);font-weight:900;padding:12px 10px 14px}
+.cake-page .cake-tile.tk-ready.is-hidden-search{display:none}
 .tk-ready__note{display:block;font-size:12px;color:var(--purple-1);opacity:.7;font-weight:800;margin-top:3px}
 .tk-footnote{text-align:center;font-size:13px;font-weight:700;opacity:.65;margin-top:24px;max-width:760px;margin-left:auto;margin-right:auto}
 .tk-lightbox-calc{border:none;width:100%;cursor:pointer;font:inherit;font-weight:800}
