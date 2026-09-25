@@ -1354,9 +1354,6 @@ html.nav-open,html.nav-open body{overflow:hidden}
 }
 @media(prefers-reduced-motion:reduce){#nav,.nav-backdrop{transition:none}}
 
-/* ===== Кнопка «Разделы»: белая ===== */
-.burger{background:#fff;color:var(--purple-1);box-shadow:0 6px 16px rgba(0,0,0,.18)}
-.burger:hover{background:#f3eefc}
 
 /* ===== Карточки разделов на главной ===== */
 .nav-grid--home{grid-template-columns:repeat(3,1fr);gap:16px}
@@ -1386,3 +1383,24 @@ html.nav-open,html.nav-open body{overflow:hidden}
 .footer-social a:hover{color:#fff;background:var(--green);border-color:var(--green);transform:translateY(-2px)}
 .footer-social img{width:18px;height:18px;object-fit:contain;filter:brightness(0) invert(1)}
 @media(max-width:860px){.footer-social{justify-content:center}}
+
+/* ===== Без иконок: меню и плитки разделов ===== */
+#nav .nav-btn{padding:13px 16px}
+#nav .nav-btn.active{box-shadow:inset 4px 0 0 var(--green)}
+#nav .flyout{padding-left:20px}
+.nav-grid--home .nav-card{padding:20px 18px 20px 24px;min-height:92px}
+@media(max-width:600px){.nav-grid--home .nav-card{padding:16px 14px 16px 18px;min-height:0}}
+
+/* ===== Мобильная версия: убрать лишнюю прокрутку вбок ===== */
+html,body{overflow-x:clip}
+#nav:not(.open){transform:none;clip-path:inset(0 0 0 100%);opacity:0}
+#nav{transition:clip-path .34s cubic-bezier(.2,.8,.2,1),opacity .2s,visibility .34s}
+#nav.open{clip-path:inset(0 0 0 0 round 28px 0 0 28px);opacity:1}
+@media(max-width:400px){
+  .logo img{height:50px}
+  .news-badge{max-width:84px;padding:7px 9px;font-size:10px}
+  .burger{padding:0 14px;gap:7px}
+  .main-bar__inner{gap:8px}
+}
+.main-bar__inner{padding-left:24px;padding-right:24px}
+@media(max-width:600px){.main-bar__inner{padding-left:14px;padding-right:14px}}
