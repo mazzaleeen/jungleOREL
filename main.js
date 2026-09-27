@@ -136,3 +136,56 @@ document.addEventListener('keydown', (e) => {
     }
   }, { passive: true });
 })();
+
+/* ===== Плавное появление блоков при прокрутке ===== */
+(function () {
+  if (!('IntersectionObserver' in window)) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const SEL = [
+    '.category h2', '.category-intro', '.qn-title', '.nav-grid .nav-card', '.nav-card-slot',
+    '.program-card', '.dish-card', '.hero-card', '.cake-tile', '.room-card', '.pkg-card', '.program-pkg',
+    '.extras-col', '.show-variant', '.price-tier', '.tk-step', '.tk-or', '.tk-fill', '.tk-calc',
+    '.tk-candy__item', '.tk-candy__card', '.tk-mk', '.journey--hero', '.journey-row__mascot'
+  ].join(',');
+  const els = [...document.querySelectorAll(SEL)].filter(el => !el.closest('#nav, .pm, .gallery-lightbox, .tk-lb'));
+  const inScroller = el => {
+    for (let a = el.parentElement; a && a !== document.body; a = a.parentElement) {
+      const ox = getComputedStyle(a).overflowX;
+      if ((ox === 'auto' || ox === 'scroll') && a.scrollWidth > a.clientWidth + 4) return true;
+    }
+    return false;
+  };
+  const uniq = els.filter(el => !els.some(o => o !== el && o.contains(el)) && !inScroller(el));
+  const done = el => {
+    el.classList.remove('rv', 'rv-in');
+    el.style.removeProperty('--rv-d');
+  };
+  const pending = new Set();
+  function reveal(el, i) {
+      if (!pending.has(el)) return;
+      pending.delete(el);
+      io.unobserve(el);
+      el.style.setProperty('--rv-d', Math.min(i, 6) * 70 + 'ms');
+      el.classList.add('rv-in');
+      el.addEventListener('transitionend', function te(ev) {
+        if (ev.target !== el || ev.propertyName !== 'transform') return;
+        el.removeEventListener('transitionend', te);
+        done(el);
+      });
+      setTimeout(() => done(el), 1400);
+  }
+  const io = new IntersectionObserver(entries => {
+    let i = 0;
+    entries.forEach(e => { if (e.isIntersecting) reveal(e.target, i++); });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+  // подстраховка при очень быстрой прокрутке: всё, что уже выше низа экрана, показываем сразу
+  let tmr = null;
+  window.addEventListener('scroll', () => {
+    clearTimeout(tmr);
+    tmr = setTimeout(() => {
+      let i = 0;
+      pending.forEach(el => { const r = el.getBoundingClientRect(); if (r.height && r.top < innerHeight) reveal(el, i++); });
+    }, 150);
+  }, { passive: true });
+  uniq.forEach(el => { el.classList.add('rv'); pending.add(el); io.observe(el); });
+})();

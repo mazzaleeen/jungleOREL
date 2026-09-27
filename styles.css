@@ -1484,3 +1484,8 @@ html.pm-open,html.pm-open body{overflow:hidden}
   .menu-page .dish-card__price{font-size:16px}
   .menu-page .dish-card:hover{transform:none}
 }
+
+/* ===== Плавное появление блоков ===== */
+.rv{opacity:0;transform:translateY(24px)}
+.rv.rv-in{opacity:1;transform:none;transition:opacity .6s ease var(--rv-d,0ms),transform .7s cubic-bezier(.2,.8,.2,1) var(--rv-d,0ms)}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
