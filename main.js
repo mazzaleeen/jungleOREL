@@ -189,3 +189,9 @@ document.addEventListener('keydown', (e) => {
   }, { passive: true });
   uniq.forEach(el => { el.classList.add('rv'); pending.add(el); io.observe(el); });
 })();
+
+/* ===== Нижняя панель (телефон): кнопка «Наверх» ===== */
+(function () {
+  const up = document.querySelector('.mbar__up');
+  if (up) up.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+})();
