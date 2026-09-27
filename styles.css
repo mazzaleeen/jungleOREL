@@ -1452,3 +1452,35 @@ html.pm-open,html.pm-open body{overflow:hidden}
 .pm__dialog--nophoto .pm__photo{display:none}
 .pm__body{justify-content:center}
 .mc-disclaimer{text-align:center;font-size:13px;font-weight:700;opacity:.6;margin-top:28px}
+
+/* ===== Ресторан: широкая плитка на главной ===== */
+.nav-grid--home .nav-card--wide{grid-column:1/-1}
+@media(min-width:981px){.nav-grid--home .nav-card--wide{min-height:0;padding-top:18px;padding-bottom:18px}}
+
+/* ===== Меню ресторана ===== */
+.menu-hero__info{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:18px}
+.menu-hero__info span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:999px;padding:8px 16px;font-size:13.5px;font-weight:800}
+.menu-category__title{font-size:26px;color:var(--purple-1);text-transform:uppercase;margin:4px 0 22px;letter-spacing:.02em}
+.menu-page .dish-card__photo{padding-top:78%;background:#fff}
+.menu-page .dish-card__photo img{object-fit:cover}
+.menu-page .menu-category[data-menu-category="napitki"] .dish-card__photo img{object-fit:cover;padding:0}
+.menu-page .dish-card{transition:transform .25s,box-shadow .25s}
+.menu-page .dish-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(74,17,133,.14)}
+.menu-page .dish-card__meta{margin-top:auto;order:3;padding-top:6px}
+.menu-page .dish-card__desc{order:2}
+.menu-page .dish-card__title{order:1}
+.menu-category.active{animation:menuFade .3s ease}
+@keyframes menuFade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.menu-note{text-align:center;font-size:13px;font-weight:700;opacity:.6;margin:36px auto 0;max-width:640px;line-height:1.6}
+@media(max-width:640px){.menu-category__title{font-size:21px;margin-bottom:16px}.menu-hero__info span{font-size:12.5px;padding:7px 13px}}
+@media(prefers-reduced-motion:reduce){.menu-category.active{animation:none}}
+@media(max-width:640px){
+  .menu-page .menu-grid{gap:12px}
+  .menu-page .dish-card{flex-direction:row;border-radius:20px;align-items:stretch}
+  .menu-page .dish-card__photo{flex:none;width:118px;height:auto;padding-top:0;min-height:118px}
+  .menu-page .dish-card__body{padding:12px 14px 12px 14px;gap:5px;min-width:0}
+  .menu-page .dish-card__title{font-size:14px}
+  .menu-page .dish-card__desc{font-size:12px;line-height:1.4}
+  .menu-page .dish-card__price{font-size:16px}
+  .menu-page .dish-card:hover{transform:none}
+}
