@@ -196,20 +196,10 @@ document.addEventListener('keydown', (e) => {
   if (up) up.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 })();
 
-/* ===== Видео: живая обложка + окно с полным роликом ===== */
+/* ===== Видео: кнопка на карточке + окно с роликом ===== */
 (function () {
   const holders = document.querySelectorAll('[data-video-full]');
   if (!holders.length) return;
-  const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => {
-    const v = e.target;
-    if (e.isIntersecting) {
-      if (!v.src) v.src = v.dataset.src;
-      v.play().then(() => v.classList.add('is-on')).catch(() => {});
-    } else { v.pause(); }
-  }), { threshold: 0.4 }) : null;
-  if (!reduce && io) holders.forEach(h => { const v = h.querySelector('.vloop'); if (v) io.observe(v); });
-
   const vm = document.createElement('div');
   vm.className = 'vm'; vm.setAttribute('aria-hidden', 'true');
   vm.innerHTML = '<div class="vm__box"><button class="vm__close" type="button" aria-label="Закрыть"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button><p class="vm__title"></p><video controls playsinline></video></div>';
