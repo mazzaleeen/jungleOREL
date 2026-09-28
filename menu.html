@@ -1489,18 +1489,23 @@
 <script src="main.js"></script>
 <script>
 (function(){document.querySelectorAll('[data-fur]').forEach(function(c){
-var t=c.querySelector('.fur-track'),s=t.querySelectorAll('.fur-slide'),dw=c.querySelector('.fur-dots'),d=[];
-function step(){return s.length>1?s[1].offsetLeft-s[0].offsetLeft:t.clientWidth}
-function maxS(){return t.scrollWidth-t.clientWidth}
-function pos(){return Math.min(Math.round(maxS()/step()),Math.round(t.scrollLeft/step()))}
-function build(){var n=Math.round(maxS()/step())+1;dw.innerHTML='';d=[];for(var i=0;i<n;i++){(function(i){var b=document.createElement('button');b.type='button';b.className='fur-dot';b.setAttribute('aria-label','Фото '+(i+1));b.onclick=function(){t.scrollTo({left:i*step(),behavior:'smooth'})};dw.appendChild(b);d.push(b)})(i)}mark()}
-function mark(){var p=pos();d.forEach(function(b,i){b.classList.toggle('is-on',i===p)})}
-t.addEventListener('scroll',mark,{passive:true});
-window.addEventListener('resize',build);
-c.querySelector('.fur-arrow--next').onclick=function(){if(t.scrollLeft>=maxS()-3)t.scrollTo({left:0,behavior:'smooth'});else t.scrollTo({left:(pos()+1)*step(),behavior:'smooth'})};
-c.querySelector('.fur-arrow--prev').onclick=function(){if(t.scrollLeft<=3)t.scrollTo({left:maxS(),behavior:'smooth'});else t.scrollTo({left:(pos()-1)*step(),behavior:'smooth'})};
-c.querySelectorAll('.fur-arrow').forEach(function(b){b.addEventListener('click',function(){})});
-build();var fb=c.closest('.menu-category');document.addEventListener('click',function(){setTimeout(build,60)});
+var t=c.querySelector('.fur-track'),orig=[].slice.call(t.querySelectorAll('.fur-slide')),N=orig.length,dw=c.querySelector('.fur-dots'),d=[],timer,ready=false;
+function clones(){return orig.map(function(o){var k=o.cloneNode(true);k.setAttribute('aria-hidden','true');var im=k.querySelector('img');if(im){im.alt='';im.removeAttribute('loading')}return k})}
+var pre=clones(),post=clones();
+pre.forEach(function(k){t.insertBefore(k,orig[0])});post.forEach(function(k){t.appendChild(k)});
+var all=[].slice.call(t.querySelectorAll('.fur-slide'));
+for(var i=0;i<N;i++){(function(i){var b=document.createElement('button');b.type='button';b.className='fur-dot';b.setAttribute('aria-label','Фото '+(i+1));b.onclick=function(){var x=idx();go(x-((x%N)+N)%N+i)};dw.appendChild(b);d.push(b)})(i)}
+function step(){return all[1].offsetLeft-all[0].offsetLeft}
+function idx(){return Math.round(t.scrollLeft/step())}
+function jump(i){t.style.scrollSnapType='none';t.style.scrollBehavior='auto';t.scrollLeft=i*step();requestAnimationFrame(function(){requestAnimationFrame(function(){t.style.scrollSnapType='';t.style.scrollBehavior=''})})}
+function go(i){t.scrollTo({left:i*step(),behavior:'smooth'})}
+function mark(){var p=((idx()%N)+N)%N;d.forEach(function(b,i){b.classList.toggle('is-on',i===p)})}
+function fix(){var i=idx();if(i<N)jump(i+N);else if(i>=2*N)jump(i-N)}
+t.addEventListener('scroll',function(){mark();clearTimeout(timer);timer=setTimeout(fix,140)},{passive:true});
+c.querySelector('.fur-arrow--next').onclick=function(){go(idx()+1)};
+c.querySelector('.fur-arrow--prev').onclick=function(){go(idx()-1)};
+function init(){if(!t.clientWidth)return;if(!ready){ready=true;jump(N)}mark()}
+if(window.ResizeObserver)new ResizeObserver(function(){if(t.clientWidth){var i=ready?((idx()%N)+N)%N:0;if(!ready){init()}else{jump(N+i)}}}).observe(t);else init();
 })})();
 </script>
 
