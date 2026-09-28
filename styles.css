@@ -1512,7 +1512,7 @@ html.pm-open,html.pm-open body{overflow:hidden}
 .fur-track::-webkit-scrollbar{display:none}
 .fur-slide{flex:0 0 calc((100% - 32px)/3);scroll-snap-align:start;background:linear-gradient(160deg,#fff,var(--bg-lavender));border-radius:24px;aspect-ratio:1/1.05;display:flex;align-items:center;justify-content:center;padding:18px;box-sizing:border-box;box-shadow:0 10px 30px rgba(74,17,133,.08)}
 .fur-slide img{max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 10px 14px rgba(74,17,133,.18))}
-.fur-arrow{position:absolute;top:calc(50% - 30px);width:44px;height:44px;border-radius:50%;border:none;background:#fff;color:var(--purple-1);font-size:28px;line-height:1;font-weight:800;cursor:pointer;box-shadow:0 6px 18px rgba(74,17,133,.22)}
+.fur-arrow{position:absolute;top:calc(50% - 30px);width:44px;height:44px;border-radius:50%;border:none;background:#fff;color:var(--purple-1);padding:0;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 18px rgba(74,17,133,.22)}
 .fur-arrow--prev{left:8px}.fur-arrow--next{right:8px}
 .fur-dots{display:flex;justify-content:center;gap:8px;margin-top:14px}
 .fur-dot{width:9px;height:9px;border-radius:50%;border:none;padding:0;background:#D9C8F0;cursor:pointer;transition:all .2s}
