@@ -1541,3 +1541,5 @@ html.pm-open,html.pm-open body{overflow:hidden}
 .vm__close{position:absolute;top:-6px;right:-6px;width:42px;height:42px;border-radius:50%;border:none;background:#fff;color:var(--purple-1);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.4);z-index:2}
 .vm__close svg{width:20px;height:20px}
 html.vm-open{overflow:hidden}
+
+.program-grid__subhead{grid-column:1/-1;margin:18px 0 0;text-align:center;font-size:clamp(22px,3.4vw,32px);line-height:1.2;color:var(--purple-1);text-transform:uppercase;letter-spacing:.01em}
