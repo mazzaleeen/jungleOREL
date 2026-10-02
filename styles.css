@@ -1543,3 +1543,14 @@ html.pm-open,html.pm-open body{overflow:hidden}
 html.vm-open{overflow:hidden}
 
 .program-grid__subhead{grid-column:1/-1;margin:18px 0 0;text-align:center;font-size:clamp(22px,3.4vw,32px);line-height:1.2;color:var(--purple-1);text-transform:uppercase;letter-spacing:.01em}
+
+/* широкая текстовая карточка (две колонки) */
+.program-card--wide{grid-column:1/-1}
+.program-card--wide .program-card__body{display:grid;grid-template-columns:1.15fr 1fr;gap:20px 56px;align-items:start;padding:34px 40px}
+.program-card--wide .program-card__title{font-size:28px}
+.program-card--wide .program-card__list{margin-top:4px}
+@media(max-width:860px){.program-card--wide .program-card__body{grid-template-columns:1fr;gap:0;padding:24px}.program-card--wide .program-card__title{font-size:22px}}
+.program-card--wide .program-card__meta{margin:12px 0 16px}
+.program-card--wide .pc-wide__col .program-card__teaser{margin:0 0 12px}
+.program-card--wide .pc-wide__col .program-card__list{margin:6px 0 18px}
+.program-card--wide .pc-wide__col:last-child{padding-top:4px}
