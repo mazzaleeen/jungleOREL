@@ -1554,3 +1554,14 @@ html.vm-open{overflow:hidden}
 .program-card--wide .pc-wide__col .program-card__teaser{margin:0 0 12px}
 .program-card--wide .pc-wide__col .program-card__list{margin:6px 0 18px}
 .program-card--wide .pc-wide__col:last-child{padding-top:4px}
+
+/* сборные торты */
+.tk-ex__sub{text-align:center;color:var(--muted,#6b5a86);margin:-6px 0 24px;font-weight:700}
+.tk-ex__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tk-ex{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:0 8px 18px rgba(74,17,133,.08);display:flex;flex-direction:column}
+.tk-ex img{width:70%;margin:0 auto 16px;aspect-ratio:1;border-radius:50%;object-fit:cover;box-shadow:0 8px 18px rgba(74,17,133,.14)}
+.tk-ex p{margin:0 0 4px}
+.tk-ex ul{margin:0 0 12px;padding-left:18px}
+.tk-ex__lbl{font-weight:800}
+.tk-ex__sum{margin-top:auto!important;padding-top:10px;border-top:1px dashed var(--line);font-size:18px;color:var(--purple-1)}
+@media(max-width:860px){.tk-ex__grid{grid-template-columns:1fr;max-width:460px;margin:0 auto}}
