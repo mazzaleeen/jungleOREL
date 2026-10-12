@@ -1565,3 +1565,6 @@ html.vm-open{overflow:hidden}
 .tk-ex__lbl{font-weight:800}
 .tk-ex__sum{margin-top:auto!important;padding-top:10px;border-top:1px dashed var(--line);font-size:18px;color:var(--purple-1)}
 @media(max-width:860px){.tk-ex__grid{grid-template-columns:1fr;max-width:460px;margin:0 auto}}
+
+/* подзаголовок блюда */
+.dish-card__sub{display:block;margin-top:4px;font-size:13px;font-weight:700;text-transform:none;letter-spacing:0;opacity:.75}
