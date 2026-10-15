@@ -1507,16 +1507,6 @@ html.pm-open,html.pm-open body{overflow:hidden}
 }
 
 /* фуршетное меню */
-.fur-carousel{position:relative;margin:0 0 26px}
-.fur-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;border-radius:24px}
-.fur-track::-webkit-scrollbar{display:none}
-.fur-slide{flex:0 0 calc((100% - 32px)/3);scroll-snap-align:start;background:linear-gradient(160deg,#fff,var(--bg-lavender));border-radius:24px;aspect-ratio:1/1.05;display:flex;align-items:center;justify-content:center;padding:18px;box-sizing:border-box;box-shadow:0 10px 30px rgba(74,17,133,.08)}
-.fur-slide img{max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 10px 14px rgba(74,17,133,.18))}
-.fur-arrow{position:absolute;top:calc(50% - 30px);width:44px;height:44px;border-radius:50%;border:none;background:#fff;color:var(--purple-1);padding:0;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 18px rgba(74,17,133,.22)}
-.fur-arrow--prev{left:8px}.fur-arrow--next{right:8px}
-.fur-dots{display:flex;justify-content:center;gap:8px;margin-top:14px}
-.fur-dot{width:9px;height:9px;border-radius:50%;border:none;padding:0;background:#D9C8F0;cursor:pointer;transition:all .2s}
-.fur-dot.is-on{background:var(--purple-1);width:24px;border-radius:6px}
 .fur-list{list-style:none;margin:0;padding:8px 22px;background:#fff;border-radius:24px;box-shadow:0 10px 30px rgba(74,17,133,.07)}
 .fur-list li{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:15px 0;border-bottom:1px dashed #E3D6F5}
 .fur-list li:last-child{border-bottom:none}
@@ -1525,8 +1515,7 @@ html.pm-open,html.pm-open body{overflow:hidden}
 .fur-row__side{display:flex;flex-direction:column;align-items:flex-end;flex:none}
 .fur-row__side strong{font-size:18px;color:var(--purple-1);white-space:nowrap}
 .fur-row__side em{font-style:normal;font-size:13px;opacity:.65}
-@media(max-width:860px){.fur-slide{flex-basis:calc((100% - 16px)/2)}}
-@media(max-width:560px){.fur-slide{flex-basis:82%}.fur-arrow{display:none}.fur-list{padding:4px 16px}}
+@media(max-width:560px){.fur-list{padding:4px 16px}}
 
 /* видео в карточках */
 .program-card__photo--vid{position:relative}
@@ -1568,3 +1557,51 @@ html.vm-open{overflow:hidden}
 
 /* подзаголовок блюда */
 .dish-card__sub{display:block;margin-top:4px;font-size:13px;font-weight:700;text-transform:none;letter-spacing:0;opacity:.75}
+
+/* ===== Фуршет: «сцена» ===== */
+.fst{background:linear-gradient(180deg,#F4EEFD 0%,#FBF8FF 70%,rgba(255,253,249,0) 100%);border-radius:36px;padding:28px 20px 26px;margin-bottom:28px}
+.fst-stage{position:relative;height:340px;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.fst-track{position:absolute;inset:0}
+.fst-it{position:absolute;left:50%;bottom:28px;width:300px;height:300px;padding:0;border:none;background:none;display:flex;align-items:flex-end;justify-content:center;transform-origin:50% 100%;transition:transform .55s cubic-bezier(.2,.8,.2,1),opacity .4s ease;cursor:pointer}
+.fst-it.is-on{cursor:default}
+.fst-it img{max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 16px 18px rgba(74,17,133,.2));pointer-events:none;-webkit-user-drag:none}
+.fst-it:not(.is-on) img{filter:drop-shadow(0 10px 12px rgba(74,17,133,.12)) saturate(.85)}
+.fst-ped{position:absolute;left:50%;bottom:14px;width:300px;height:34px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(ellipse at center,rgba(74,17,133,.24),rgba(74,17,133,0) 70%);pointer-events:none}
+.fst-arrow{position:absolute;top:calc(50% - 40px);z-index:20;width:50px;height:50px;border-radius:50%;border:none;background:#fff;color:var(--purple-1);padding:0;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 8px 22px rgba(74,17,133,.18);transition:transform .2s,box-shadow .2s}
+.fst-arrow:hover{transform:scale(1.06);box-shadow:0 12px 26px rgba(74,17,133,.24)}
+.fst-arrow--prev{left:6px}.fst-arrow--next{right:6px}
+.fst-cap{text-align:center;margin-top:10px;min-height:96px}
+.fst-name{font-size:24px;color:var(--purple-1);margin:0;line-height:1.2}
+.fst-desc{margin:6px auto 0;max-width:560px;font-size:15px;font-weight:600;opacity:.8;line-height:1.45}
+.fst-meta{display:flex;justify-content:center;align-items:baseline;gap:14px;margin-top:8px}
+.fst-w{font-size:13px;font-weight:700;opacity:.6}
+.fst-p{font-size:26px;font-weight:900;color:var(--purple-1)}
+.fst-thumbs{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:18px}
+.fst-th{width:64px;height:64px;border-radius:18px;border:2px solid transparent;background:#fff;padding:6px;cursor:pointer;box-shadow:0 4px 12px rgba(74,17,133,.08);transition:border-color .2s,transform .2s}
+.fst-th:hover{transform:translateY(-2px)}
+.fst-th.is-on{border-color:var(--purple-1)}
+.fst-th img{width:100%;height:100%;object-fit:contain;pointer-events:none}
+.fur-more{background:#fff;border-radius:24px;box-shadow:0 10px 30px rgba(74,17,133,.07);padding:4px 0 0}
+.fur-more__title{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--purple-1);opacity:.7;margin:16px 22px 0}
+.fur-more .fur-list{box-shadow:none;background:none}
+@media(max-width:560px){
+  .fst{padding:18px 8px 20px;border-radius:26px}
+  .fst-stage{height:250px}
+  .fst-it{width:220px;height:220px;bottom:22px}
+  .fst-ped{width:220px;bottom:10px}
+  .fst-arrow{width:42px;height:42px;top:calc(50% - 34px)}
+  .fst-name{font-size:20px}.fst-desc{font-size:14px;padding:0 8px}.fst-p{font-size:23px}
+  .fst-thumbs{gap:8px}
+  .fst-th{width:44px;height:44px;border-radius:13px;padding:4px}
+  .fur-more__title{margin:14px 16px 0}
+}
+@media(prefers-reduced-motion:reduce){.fst-it{transition:none}}
+
+/* ===== Категории меню: без полосы прокрутки ===== */
+.menu-filters__inner{scrollbar-width:none}
+.menu-filters__inner::-webkit-scrollbar{display:none}
+.mf-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:38px;height:38px;border-radius:50%;border:none;background:#fff;color:var(--purple-1);box-shadow:0 4px 14px rgba(74,17,133,.18);display:none;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.mf-arrow--prev{left:max(8px,calc(50% - 600px))}.mf-arrow--next{right:max(8px,calc(50% - 600px))}
+.menu-filters.mf-can-prev .mf-arrow--prev{display:flex}
+.menu-filters.mf-can-next .mf-arrow--next{display:flex}
+@media(hover:none),(max-width:640px){.mf-arrow{display:none!important}}
