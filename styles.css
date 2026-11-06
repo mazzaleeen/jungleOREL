@@ -1605,3 +1605,6 @@ html.vm-open{overflow:hidden}
 .menu-filters.mf-can-prev .mf-arrow--prev{display:flex}
 .menu-filters.mf-can-next .mf-arrow--next{display:flex}
 @media(hover:none),(max-width:640px){.mf-arrow{display:none!important}}
+
+/* скрыто через админку */
+body:not(.ed-mode) [data-hide]{display:none!important}
